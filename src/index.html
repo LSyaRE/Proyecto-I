@@ -14,40 +14,110 @@
     
     <!--Diseño-->
     <link rel="stylesheet" href="css/design.css">
-    
+     <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/iCheck/flat/blue.css">
+  <!-- Morris chart -->
+  <link rel="stylesheet" href="plugins/morris/morris.css">
+  <!-- jvectormap -->
+  <link rel="stylesheet" href="plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+  <!-- Date Picker -->
+  <link rel="stylesheet" href="plugins/datepicker/datepicker3.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- bootstrap wysihtml5 - text editor -->
+  <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 
 
 </head>
 
 <body>
     <header class="main-header">
+        <div id="sidebar">
+            <div class="toggle-btn">
+                <span>&#9776;</span>
 
-        <a href="index2.html" class="logo">
+            </div>
+        
+        <nav class="navbar navbar-inverse navbar-static-top">
+            
 
-            <span class="logo-mini"><b>A</b>LT</span>
-
-            <span class="logo-lg"><b>Admin</b>LTE</span>
-        </a>
-        <nav class="navbar navbar-static-top">
-
-            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-                <span class="sr-only">Toggle navigation</span>
-            </a>
-
-            <div class="navbar-custom-menu">
-                <ul class="nav navbar-nav">
             </div>
         </nav>
-
+         
     </header>
     <aside>
-        <section>
-
-            <div>
-
-
-            </div>
-        </section>
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+        <!-- Sidebar user panel -->
+        <div class="user-panel">
+          <div class="pull-left image">
+            <img src="img/user.png" class="img-circle" alt="User Image">
+          </div>
+          <div class="pull-left info">
+            <p>Username</p>
+          </div>
+        </div>
+    
+       
+        <ul class="sidebar-menu">
+             
+          <li class="treeview">
+            <a href="#">
+                <img src="img/maletin.png" class="img-circle" alt="User Image" width="20px"> <span>Departamentos</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="starter.html"><i class="fa fa-circle-o"></i> Departamento 1</a></li>
+              <li><a href="pages/examples/profile.html"><i class="fa fa-circle-o"></i> Profile</a></li>
+              <li><a href="pages/examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
+              <li><a href="pages/examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>
+              <li><a href="pages/examples/lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
+              <li><a href="pages/examples/404.html"><i class="fa fa-circle-o"></i> 404 Error</a></li>
+              <li><a href="pages/examples/500.html"><i class="fa fa-circle-o"></i> 500 Error</a></li>
+              <li><a href="pages/examples/blank.html"><i class="fa fa-circle-o"></i> Blank Page</a></li>
+              <li><a href="pages/examples/pace.html"><i class="fa fa-circle-o"></i> Pace Page</a></li>
+            </ul>
+          </li>
+         
+            <ul class="treeview-menu">
+              
+              <li>
+                <a href="#"><i class="fa fa-circle-o"></i> Level One
+                  <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                  </span>
+                </a>
+             
+              </li>
+              <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
+            </ul>
+          </li>
+          
+          <li class="header">LABELS</li>
+          <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
+          <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
+          <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
+        </ul>
+      </section>
+      <!-- /.sidebar -->
 
     </aside>
     <footer>
@@ -55,6 +125,9 @@
 
 
     </footer>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/npm.js"></script>
 </body>
 
 </html>

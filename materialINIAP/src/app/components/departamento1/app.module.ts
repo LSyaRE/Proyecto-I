@@ -16,6 +16,10 @@ import { Departamento9Component } from '../departamento9/departamento9.component
 import { InventarioComponent } from '../inventario/inventario.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { EliminadosComponent } from '../eliminados/eliminados.component';
+import { MantenimientoComponent } from '../mantenimiento/mantenimiento.component';
+import { EstablesComponent } from '../estables/estables.component';
+
 
 
 @NgModule({
@@ -31,7 +35,10 @@ import { AppComponent } from './app.component';
     Departamento9Component,
     Departamento10Component,
     Departamento11Component,
-    InventarioComponent
+    InventarioComponent,
+    EliminadosComponent,
+    MantenimientoComponent,
+    EstablesComponent
   ],
   imports: [
     BrowserModule,

@@ -19,6 +19,7 @@ import { AppComponent } from './app.component';
 import { EliminadosComponent } from '../app/components/eliminados/eliminados.component';
 import { MantenimientoComponent } from '../app/components/mantenimiento/mantenimiento.component';
 import { EstablesComponent } from '../app/components/estables/estables.component';
+import { Departamento1Component } from './components/departamento1/departamento1.component';
 
 
 
@@ -38,7 +39,8 @@ import { EstablesComponent } from '../app/components/estables/estables.component
     InventarioComponent,
     EliminadosComponent,
     MantenimientoComponent,
-    EstablesComponent
+    EstablesComponent,
+    Departamento1Component
   ],
   imports: [
     BrowserModule,

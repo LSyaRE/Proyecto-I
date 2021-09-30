@@ -15,6 +15,7 @@ import { Departamento10Component } from './app/departamento10/departamento10.com
 import { Departamento11Component } from './app/departamento11/departamento11.component';
 import { Departamento12Component } from './app/departamento12/departamento12.component';
 import { Departamento13Component } from './app/departamento13/departamento13.component';
+import { InventarioComponent } from './inventario/inventario.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { Departamento13Component } from './app/departamento13/departamento13.com
     Departamento10Component,
     Departamento11Component,
     Departamento12Component,
-    Departamento13Component
+    Departamento13Component,
+    InventarioComponent
   ],
   imports: [
     BrowserModule,

@@ -15,11 +15,14 @@ import { Departamento1Component } from './departamento1/departamento1.component'
 import { EliminadosComponent } from './eliminados/eliminados.component';
 import { EstablesComponent } from './estables/estables.component';
 import { MantenimientoComponent } from './mantenimiento/mantenimiento.component';
+import { LoginComponent } from './login/login.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    LoginComponent
+  ],
   imports: [
     CommonModule
   ],

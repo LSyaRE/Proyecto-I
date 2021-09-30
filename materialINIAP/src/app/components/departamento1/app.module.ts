@@ -3,11 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 
 
-
-import { Departamento10Component } from '../departamento10/departamento10.component';
 import { Departamento11Component } from '../departamento11/departamento11.component';
-import { Departamento12Component } from '../departamento12/departamento12.component';
-import { Departamento13Component } from '../departamento13/departamento13.component';
+import { Departamento10Component } from '../departamento10/departamento10.component';
 import { Departamento2Component } from '../departamento2/departamento2.component';
 import { Departamento3Component } from '../departamento3/departamento3.component';
 import { Departamento4Component } from '../departamento4/departamento4.component';
@@ -34,8 +31,6 @@ import { AppComponent } from './app.component';
     Departamento9Component,
     Departamento10Component,
     Departamento11Component,
-    Departamento12Component,
-    Departamento13Component,
     InventarioComponent
   ],
   imports: [

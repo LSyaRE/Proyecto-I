@@ -30,9 +30,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/styles2.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/@popperjs/core/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"]
           },
           "configurations": {
             "production": {
@@ -98,12 +102,16 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css"
+              "src/styles.css",
+              "src/styles2.css"
+
             ],
             "scripts": [
             "node_modules/jquery/dist/jquery.min.js",
             "node_modules/@popperjs/core/dist/umd/popper.min.js",
-            "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            "node_modules/bootstrap/dist/js/bootstrap.min.js",
+            "src/assets/js/AdminLTE/demo.js",
+            "assets/js/AdminLTE/app.min.js"
 
             ]
           }

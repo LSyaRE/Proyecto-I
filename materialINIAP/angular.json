@@ -36,7 +36,10 @@
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/@popperjs/core/dist/umd/popper.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"]
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "src/assets/js/AdminLTE/demo.js",
+              "src/assets/js/AdminLTE/app.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -111,7 +114,7 @@
             "node_modules/@popperjs/core/dist/umd/popper.min.js",
             "node_modules/bootstrap/dist/js/bootstrap.min.js",
             "src/assets/js/AdminLTE/demo.js",
-            "assets/js/AdminLTE/app.min.js"
+            "src/assets/js/AdminLTE/app.min.js"
 
             ]
           }

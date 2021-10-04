@@ -16,6 +16,7 @@ import { Departamento11Component } from './departamento11/departamento11.compone
 import { EliminadosComponent } from './eliminados/eliminados.component';
 import { EstablesComponent } from './estables/estables.component';
 import { MantenimientoComponent } from './mantenimiento/mantenimiento.component';
+import { NavegacionComponent } from './navegacion/navegacion.component';
 
 
 
@@ -34,7 +35,8 @@ import { MantenimientoComponent } from './mantenimiento/mantenimiento.component'
     Departamento11Component,
     EliminadosComponent,
     EstablesComponent,
-    MantenimientoComponent
+    MantenimientoComponent,
+    NavegacionComponent
   ],
   imports: [
     CommonModule
@@ -53,7 +55,8 @@ import { MantenimientoComponent } from './mantenimiento/mantenimiento.component'
     Departamento11Component,
     EliminadosComponent,
     EstablesComponent,
-    MantenimientoComponent
+    MantenimientoComponent,
+    NavegacionComponent
 
   ]
 })

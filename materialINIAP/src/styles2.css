@@ -22,11 +22,7 @@ body{
     font-style: italic;
 }
 
-p[_ngcontent-qbs-c17] {
-    font-weight: 600;
-    margin-bottom: 50px;
-    text-decoration: none;
-}
+
 
 p {
     display: block;
@@ -37,7 +33,7 @@ p {
 }
 
 .fa {
-    color: rgb(0, 0, 0);
+    color: rgb(206, 161, 15);
 }
 
 .user-panel{
@@ -50,9 +46,17 @@ p {
  }
 
  .sidebar ul li{
-    color: chartreuse;
+    color: rgba(200, 255, 145, 0.815);
     font-weight:bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    text-emphasis-color: #ffff;
+    
 }
-
+.Username{
+    color: azure;
+}
+.pull-right-container ul il {
+    color: chartreuse;
+}
+.treeview-menu ::-webkit-meter-even-less-good-value a {
+color: crimson;
+}

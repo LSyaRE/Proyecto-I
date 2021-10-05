@@ -3,11 +3,11 @@
 body {
   margin: 0px;
   padding: 0px;
-  background: url(assets/img/campo.jpg) no-repeat center top;
+  background: url(assets/img/campo.jpg);
   background-size: cover;
   font-family: sans-serif;
   height: 100vh;
-
+  
 }
 
 

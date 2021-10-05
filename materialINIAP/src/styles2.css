@@ -6,12 +6,15 @@ body{
     background-size: cover;
     font-family: sans-serif;
     height: 100vh;
-    color: lavenderblush;
+    color: rgb(133, 127, 129);
+    filter: blur();
+    
 
 }
 
 .sidebar{
-    filter: opacity(80%s);
+
+    backdrop-filter: 80%;
 }
 
 .user-panel{
@@ -34,27 +37,24 @@ p {
 }
 
 .fa {
-    color: rgb(232, 241, 238);
+    color: rgb(0, 0, 0);
 }
-.header{
-    color: rgb(243, 243, 243);
-    font-weight: 600;
-    font-style:normal;
-}
+
 .user-panel{
     fill-opacity: initials;
 }
 
-.treeview-menu{
-    font-style:inherit;
-    text-decoration:none;
-}
+ .main-sidebar{
+     background-color: rgba(61, 65, 65, 0.267);
+    backdrop-filter: blur(6px);
+ }
 
-.pull-right-container{
-    text-decoration: none;
-    color: peachpuff;
+ .sidebar ul li{
+    color: chartreuse;
+    font-weight:bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-emphasis-color: #ffff;
 }
-
-.content-wrapper{
-    
+.logo-lg{
+    background-color: rgba(10, 128, 29, 0.74);
 }

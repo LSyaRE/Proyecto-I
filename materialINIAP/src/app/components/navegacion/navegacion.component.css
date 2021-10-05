@@ -44,7 +44,7 @@ body {
   max-width: 1250px;
   margin: 0 auto;
   min-height: 100%;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 8px rgba(31, 23, 23, 0.486);
   position: relative;
 }
 
@@ -100,7 +100,7 @@ body {
 .main-footer {
   background: #fff;
   padding: 15px;
-  color: #444;
+  color: rgb(255, 0, 0);
   border-top: 1px solid #d2d6de;
 }
 /* Fixed layout */

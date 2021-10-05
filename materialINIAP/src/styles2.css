@@ -1,1 +1,60 @@
 
+body{
+    margin: 0px;
+    padding: 0px;
+    background: url(assets/img/campo.jpg) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+    color: lavenderblush;
+
+}
+
+.sidebar{
+    filter: opacity(80%s);
+}
+
+.user-panel{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+p[_ngcontent-qbs-c17] {
+    font-weight: 600;
+    margin-bottom: 50px;
+    text-decoration: none;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.fa {
+    color: rgb(232, 241, 238);
+}
+.header{
+    color: rgb(243, 243, 243);
+    font-weight: 600;
+    font-style:normal;
+}
+.user-panel{
+    fill-opacity: initials;
+}
+
+.treeview-menu{
+    font-style:inherit;
+    text-decoration:none;
+}
+
+.pull-right-container{
+    text-decoration: none;
+    color: peachpuff;
+}
+
+.content-wrapper{
+    
+}

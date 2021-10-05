@@ -51,6 +51,12 @@ p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     
 }
+<<<<<<< HEAD
 .Username{
     color: azure;
+=======
+
+.usernome{
+    color: #fff;
+>>>>>>> dcc93e3c84cd5e4e7254de4e9cdfc759fc7e31d2
 }

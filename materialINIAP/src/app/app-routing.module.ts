@@ -5,10 +5,7 @@ import { LoginComponent } from './pages/login/login.component';
 
 const routes: Routes = [
 {path:'',component:LoginComponent},
-{path:'home',component:NavegacionComponent},
-
-
-
+{path:'home',component:NavegacionComponent}
 ];
 
 @NgModule({

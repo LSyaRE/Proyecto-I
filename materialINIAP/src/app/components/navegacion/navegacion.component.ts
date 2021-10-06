@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -9,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class NavegacionComponent implements OnInit {
 
   nombre: string = 'Nombre Usuario'
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
   }
@@ -18,5 +19,9 @@ export class NavegacionComponent implements OnInit {
     
     this.nombre= 'Jonas'
     
+  }
+  navegarDepartamentos(){
+
+    this.router.navigate(['/home/departamento1'])
   }
 }

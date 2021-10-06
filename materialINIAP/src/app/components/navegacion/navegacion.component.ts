@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EstablesComponent } from '../estables/estables.component';
 
 @Component({
   selector: 'app-navegacion',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavegacionComponent implements OnInit {
 
+  nombre: string = 'nombre'
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  cambiarNombre(){
+
+    this.nombre = 'hola que tal'
+
   }
 
 }

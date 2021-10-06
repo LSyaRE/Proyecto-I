@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class NavegacionComponent implements OnInit {
 
-  nombre: string = 'Nombre Usuario'
+  nombre: string = 'Hola'
   constructor(private router:Router) { }
 
   ngOnInit(): void {
@@ -17,11 +17,8 @@ export class NavegacionComponent implements OnInit {
 
   cambiarNombre(){
     
-    this.nombre= 'Jonas'
+    this.nombre= 'Valeria'
     
   }
-  navegarDepartamentos(){
 
-    this.router.navigate(['/home/departamento1'])
-  }
 }

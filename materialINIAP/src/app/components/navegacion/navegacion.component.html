@@ -3,11 +3,11 @@
 </style>
 
 <body>
-    <header class="main-header">
+    <header class="main-header fixed">
 
      
 
-      <a href="/home" class="logo">
+      <a routerLink="/home" class="logo">
 
       <span class="logo-mini">
         <img src="assets/img/logo.png" class="img-circle" alt="User Image" width="100spx"  >
@@ -57,17 +57,17 @@
             </a>
             <ul class="treeview-menu">
 
-              <li><a (click)='navegarDepartamentos()' class="alterd"><i class="fa fa-circle-o text-aqua"></i> Direccion General </a></li>
-              <li><a href="/home/departamento2"><i class="fa fa-circle-o text-aqua"></i> Panificacion</a></li>
-              <li><a href="pages/examples/profile.html"><i class="fa fa-circle-o text-aqua"></i> Comunicacion Social </a></li>
-              <li><a href="pages/examples/login.html"><i class="fa fa-circle-o text-aqua"></i>Informatica </a></li>
-              <li><a href="pages/examples/register.html"><i class="fa fa-circle-o text-aqua"></i>Investigaciones </a></li>
-              <li><a href="pages/examples/500.html"><i class="fa fa-circle-o text-aqua"></i>Auditoria Interna </a></li>
-              <li><a href="pages/examples/blank.html"><i class="fa fa-circle-o text-aqua"></i>Transferencia</a></li>
-              <li><a href="pages/examples/pace.html"><i class="fa fa-circle-o text-aqua"></i>Asesoria Juridica</a></li>
-              <li><a href="pages/examples/pace.html"><i class="fa fa-circle-o text-aqua"></i>Recursos Humanos</a></li>
-              <li><a href="pages/examples/pace.html"><i class="fa fa-circle-o text-aqua"></i>Administrativa Financiera</a></li>
-              <li><a href="pages/examples/pace.html"><i class="fa fa-circle-o text-aqua"></i>Produccion Servicios</a></li>
+              <li><a routerLink="/home" (click)="cambiarNombre()" class="alterd"><i class="fa fa-circle-o text-aqua"></i> Direccion General </a></li>
+              <li><a routerLink="/login" (click)="cambiarNombre()"  ><i class="fa fa-circle-o text-aqua"></i> Panificacion</a></li>
+              <li><a routerLink="/home" (click)="cambiarNombre()"><i class="fa fa-circle-o text-aqua"></i> Comunicacion Social </a></li>
+              <li><a routerLink="/home" (click)="cambiarNombre()"><i class="fa fa-circle-o text-aqua"></i>Informatica </a></li>
+              <li><a routerLink="/home" (click)="cambiarNombre()"><i class="fa fa-circle-o text-aqua"></i>Investigaciones </a></li>
+              <li><a routerLink="/home" (click)="cambiarNombre()"><i class="fa fa-circle-o text-aqua"></i>Auditoria Interna </a></li>
+              <li><a routerLink="/home" (click)="cambiarNombre()"><i class="fa fa-circle-o text-aqua"></i>Transferencia</a></li>
+              <li><a routerLink="/home" (click)="cambiarNombre()"><i class="fa fa-circle-o text-aqua"></i>Asesoria Juridica</a></li>
+              <li><a routerLink="/home" (click)="cambiarNombre()"><i class="fa fa-circle-o text-aqua"></i>Recursos Humanos</a></li>
+              <li><a routerLink="/home" (click)="cambiarNombre()"><i class="fa fa-circle-o text-aqua"></i>Administrativa Financiera</a></li>
+              <li><a routerLink="/home" (click)="cambiarNombre()"><i class="fa fa-circle-o text-aqua"></i>Produccion Servicios</a></li>
              
 
             </ul>

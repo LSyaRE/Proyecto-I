@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-
+import { ComponentsRoutingModule } from './components-routing.module';
 import { Departamento1Component } from './departamento1/departamento1.component';
 import { Departamento2Component } from './departamento2/departamento2.component';
 import { Departamento3Component } from './departamento3/departamento3.component';
@@ -39,7 +39,9 @@ import { NavegacionComponent } from './navegacion/navegacion.component';
     NavegacionComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ComponentsRoutingModule
+    
   ],
   exports:[
     Departamento1Component,

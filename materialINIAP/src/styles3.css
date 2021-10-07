@@ -1,15 +1,11 @@
-.table-fixed tbody{
-    height: 230px;
-    overflow-y: auto;
-    width: 100%;
+body{
+   
 }
-.table-fixed thead,
-.table-fixed tbody, 
-.table-fixed th{
-     display: block;
-}
-.table-fixed tbody td,
-.table-fixed thead > tr > th{
-    float: left;
-    border-bottom-width:0;
+
+
+.main-container{
+    background: rgba(70, 75, 74, 0.445);
+    height: 650px;
+    overflow-y: scroll;
+    width: 150ch;
 }

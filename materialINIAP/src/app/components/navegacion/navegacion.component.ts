@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class NavegacionComponent implements OnInit {
 
-  nombre: string = 'Hola'
+  nombre: string = 'Direccion General'
   
   constructor(private router:Router) { }
 

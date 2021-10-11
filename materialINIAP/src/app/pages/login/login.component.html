@@ -1,27 +1,25 @@
 
 
 <img src="assets/img/logo.png" class="logo" >
-<div class="login-box">
+<div class="from-group">
   <img src="assets/img/icono.png" class="avatar" alt="Avatar Image">
   <h1>Login </h1>
-  <form >
-    <label for="username">Correo Electronico</label>
-    <input type="text" placeholder="Enter Username">
-    <label for="password">Contraseña<a href=""></a></label>
-    <input type="password" placeholder="Enter Password">
-    
-    <form (click)='navHome()'>
-      <input  type="submit" value="Entrar">
-    </form>
 
-	<form (click)='navHome()'>
-		<input  type="submit" value="Refrescar">
-	  </form>
-<form (submit)="submit()">
-
+  <form (submit)="submit()">
+    <div class="from-group">
+      <label for="username">username</label>
+      <input type="text" autocomplete="off" class="form-control" id="username" name="username" required [(ngModel)]="model.username" >
+    </div>
     
-  </form>
-  
+    <div class="from-group">
+      <label for="pascword">pascword</label>
+      <input type="=pasword" class="form-control" id="pascword" name="pascword">
+    </div>
+    
+    <button type="submit" class="btn btn-success">Enviar</button>
+    <button type="submit" class="btn btn-default">Refrescar</button>
+    
+    </form> 
 
 
 

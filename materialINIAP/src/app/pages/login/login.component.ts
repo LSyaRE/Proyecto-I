@@ -9,7 +9,7 @@ import { Registro } from './registro';
               './login2.component.css']
 })
 export class LoginComponent implements OnInit {
-  model: Registro = {username:'', pasword:''};
+  model: Registro = {username:'', pasword:'',};
   constructor(private router:Router) { }
 
   ngOnInit(): void {
@@ -22,6 +22,3 @@ export class LoginComponent implements OnInit {
   submit(){
     console.log(this.model)}
 }
- 
-
- 

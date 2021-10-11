@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Registro } from './registro';
 
 @Component({
   selector: 'app-login',
@@ -20,3 +21,17 @@ export class LoginComponent implements OnInit {
   }
 
 }
+ 
+export class TemplateFormComponent implements OnInit {
+  model: Registro = {username:'', pasword:''};
+  constructor() { }
+
+  ngOnInit(){
+
+  }
+
+  submit(){
+    console.log(this.model)
+  }
+}
+ 

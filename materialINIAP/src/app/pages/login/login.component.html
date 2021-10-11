@@ -1,26 +1,27 @@
 
 
-<img src="assets/img/logo.png" class="logo" >
-<div class="from-group">
-  <img src="assets/img/icono.png" class="avatar" alt="Avatar Image">
-  <h1>Login </h1>
+    <img src="assets/img/logo.png" class="logo" >
+    <div class="login-box">
+      <img src="assets/img/icono.png" class="avatar" alt="Avatar Image" >
+      <h1>Login </h1>
+    <form>
+      <fieldset>
+      <div class="fossrm-group">
+        <label for="username">Username</label>
+        <input type="email"  id="username" name="username"  title="Por Favor lleno este campo" required>
+      </div>
 
-  <form (submit)="submit()">
-    <div class="from-group">
-      <label for="username">username</label>
-      <input type="text" autocomplete="off" class="form-control" id="username" name="username" required [(ngModel)]="model.username" >
-    </div>
-    
-    <div class="from-group">
-      <label for="pascword">pascword</label>
-      <input type="=pasword" class="form-control" id="pascword" name="pascword">
-    </div>
-    
-    <button type="submit" class="btn btn-success">Enviar</button>
-    <button type="submit" class="btn btn-default">Refrescar</button>
-    
-    </form> 
+      <div class="form-group">
+        <label for="pascword">Pasword</label>
+        <input type="=text"   name="numeros" title="Por Favor s " required>
+      </div>
+    <div>
+      <button type="submit" class="btn btn-success">Enviar</button>
+      <button type="submit" class="btn btn-default">Refrescar</button>
 
+    </div>
+  </fieldset>
+    </form>
 
 
 

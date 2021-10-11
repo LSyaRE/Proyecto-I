@@ -5,11 +5,11 @@ import { Registro } from './registro';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css',
+  styleUrls:  ['./login.component.css',
               './login2.component.css']
 })
 export class LoginComponent implements OnInit {
-  model: Registro = {username:'', pasword:'',};
+  model: Registro = {username:'', password:'',};
   constructor(private router:Router) { }
 
   ngOnInit(): void {

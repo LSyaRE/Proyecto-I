@@ -9,7 +9,7 @@ import { Registro } from './registro';
               './login2.component.css']
 })
 export class LoginComponent implements OnInit {
-
+  model: Registro = {username:'', pasword:''};
   constructor(private router:Router) { }
 
   ngOnInit(): void {
@@ -19,19 +19,9 @@ export class LoginComponent implements OnInit {
 
     this.router.navigate(['/home'])
   }
-
+  submit(){
+    console.log(this.model)}
 }
  
-export class TemplateFormComponent implements OnInit {
-  model: Registro = {username:'', pasword:''};
-  constructor() { }
 
-  ngOnInit(){
-
-  }
-
-  submit(){
-    console.log(this.model)
-  }
-}
  

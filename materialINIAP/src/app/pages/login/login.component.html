@@ -1,27 +1,28 @@
 
 
-    <img src="assets/img/logo.png" class="logo" >
-    <div class="login-box">
-      <img src="assets/img/icono.png" class="avatar" alt="Avatar Image" >
-      <h1>Login </h1>
-    <form>
-      <fieldset>
-      <div class="fossrm-group">
-        <label for="username">Username</label>
-        <input type="email"  id="username" name="username"  title="Por Favor lleno este campo" required>
-      </div>
-
-      <div class="form-group">
-        <label for="pascword">Pasword</label>
-        <input type="=text"   name="numeros" title="Por Favor s " required>
-      </div>
-    <div>
-      <button type="submit" class="btn btn-success">Enviar</button>
-      <button type="submit" class="btn btn-default">Refrescar</button>
-
-    </div>
-  </fieldset>
+<img src="assets/img/logo.png" class="logo" >
+<div class="login-box">
+  <img src="assets/img/icono.png" class="avatar" alt="Avatar Image">
+  <h1>Login </h1>
+  <form >
+    <label for="username">Correo Electronico</label>
+    <input type="text" placeholder="Enter Username">
+    <label for="password">Contraseña<a href=""></a></label>
+    <input type="password" placeholder="Enter Password">
+    
+    <form (click)='navHome()'>
+      <input  type="submit" value="Entrar">
     </form>
+
+	<form (click)='navHome()'>
+		<input  type="submit" value="Refrescar">
+	  </form>
+<form (submit)="submit()">
+
+    
+  </form>
+  
+
 
 
 

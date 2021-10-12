@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 export class NavegacionComponent implements OnInit {
 
   nombre: string = 'Direccion General'
+  opcion: string = '';
   
   constructor(private router:Router) { }
 

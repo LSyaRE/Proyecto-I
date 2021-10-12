@@ -5,12 +5,12 @@
   <img src="assets/img/icono.png" class="avatar" alt="Avatar Image">
   <h1>Login </h1>
 
-      <form >
+      <form (submit)="submit()">
         
         <label for="Username" >Correo Electronico </label>
-        <input type="text"  placeholder="Enter Email">
+        <input type="text"  placeholder="Enter Email" [(ngModel)]="model.username">
         <label for="password">Contraseña<a href=""></a></label>
-        <input type="password" placeholder="Enter Password">
+        <input type="password" placeholder="Enter Password" [(ngModel)]="model.password">
         
         <form >
           <input  type="submit" value="Entrar" (click)="navHome()">

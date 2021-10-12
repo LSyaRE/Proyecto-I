@@ -8,9 +8,9 @@
       <form (submit)="submit()">
         
         <label for="Username" >Correo Electronico </label>
-        <input type="text"  placeholder="Enter Email" [(ngModel)]="model.username">
+        <input type="text"  placeholder="Enter Email" [(ngModel)]="model.username" name="username">
         <label for="password">Contraseña<a href=""></a></label>
-        <input type="password" placeholder="Enter Password" [(ngModel)]="model.password">
+        <input type="password" placeholder="Enter Password" [(ngModel)]="model.password" name="password">
         
         <form >
           <input  type="submit" value="Entrar" (click)="navHome()">

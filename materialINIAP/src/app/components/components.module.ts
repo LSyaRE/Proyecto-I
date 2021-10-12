@@ -21,8 +21,10 @@ import { ComponentsComponent } from './components.component';
 
 
 
+
 @NgModule({
   declarations: [
+    
     Departamento1Component,
     Departamento2Component,
     Departamento3Component,
@@ -39,6 +41,7 @@ import { ComponentsComponent } from './components.component';
     MantenimientoComponent,
     NavegacionComponent,
     ComponentsComponent
+    
   ],
   imports: [
     CommonModule,
@@ -46,6 +49,7 @@ import { ComponentsComponent } from './components.component';
     
   ],
   exports:[
+    
     Departamento1Component,
     Departamento2Component,
     Departamento3Component,
@@ -60,7 +64,9 @@ import { ComponentsComponent } from './components.component';
     EliminadosComponent,
     EstablesComponent,
     MantenimientoComponent,
-    NavegacionComponent
+    NavegacionComponent,
+    ComponentsComponent
+    
 
   ]
 })

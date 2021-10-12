@@ -17,6 +17,7 @@ import { EliminadosComponent } from './eliminados/eliminados.component';
 import { EstablesComponent } from './estables/estables.component';
 import { MantenimientoComponent } from './mantenimiento/mantenimiento.component';
 import { NavegacionComponent } from './navegacion/navegacion.component';
+import { ComponentsComponent } from './components.component';
 
 
 
@@ -36,7 +37,8 @@ import { NavegacionComponent } from './navegacion/navegacion.component';
     EliminadosComponent,
     EstablesComponent,
     MantenimientoComponent,
-    NavegacionComponent
+    NavegacionComponent,
+    ComponentsComponent
   ],
   imports: [
     CommonModule,

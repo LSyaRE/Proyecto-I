@@ -2,11 +2,11 @@
 <form (submit)="submit()" #formularioRegistro="ngForm">
    <div class="form-group">
      <label for="username">username</label>
-         <input type="text" autocomplete="off" class="form-control" id="username" name="username" required 
-          [(ngModel)]="model.username" #username="ngModel">
+         <input type="text" autocomplete="off" class="form-control" id="username" name="username" 
+          required  [(ngModel)]="model.username" #username="ngModel">
 
         <div *ngIf="username.invalid  && (username.dirty || username.touched)" class="alert alert-danger">
-          <div *ngIf="username.errors.">
+          <div *ngIf="username.errors.required">
             username is required.
           </div>
         </div>
@@ -19,16 +19,16 @@
           required minlength="4" #password="ngModel">
 
           <div *ngIf="password.invalid  && (password.dirty || password.touched)" class="alert alert-danger">
-            <div *ngIf="password.errors">
+            <div *ngIf="password.errors.required">
               password is required.
             </div>
           </div>
-          <div **ngIf="password.errors.minlength">
+          <div *ngIf="password.errors.minlength">
             la longitud minima del password debe de ser de 4 caracteres.
           </div>
         </div>
         
-        <button type="submit" class="btn btn-success" [disabled]="!formularioRegistro.form.valid" >Enviar</button>
+        <button type="submit" class="btn btn-success" (disabled)="!formularioRegistro.form.valid" >Enviar</button>
         <button type="submit" class="btn btn-default" (click)="refrescar()">Refrescar</button>
         
 

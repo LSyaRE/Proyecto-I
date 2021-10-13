@@ -13,7 +13,7 @@ body {
 }
 .login-box {
   width: 390px;
-  height: 430px;
+  height: 530px;
   background: rgb(18, 70, 48);
   color: #fff;
   top: 50%;
@@ -36,8 +36,6 @@ body {
 .h1{
   position: absolute;
 }
-
-
 
   .login-box input[type="submit"] {
     border: none;

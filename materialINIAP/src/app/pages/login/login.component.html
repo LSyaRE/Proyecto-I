@@ -1,5 +1,5 @@
 
-<form (submit)="submit()" #formularioRegistro="ngForm">
+<!-- <form (submit)="submit()" #formularioRegistro="ngForm" class="tabla">
    <div class="form-group">
      <label for="username">username</label>
          <input type="text" autocomplete="off" class="form-control" id="username" name="username" 
@@ -13,7 +13,7 @@
         </div>
         
 
-        <div class="form-gssroup">
+        <div class="form-group">
           <label for=" password"> password</label>
           <input type="= password" class="form-control" id=" password" name=" password" [(ngModel)]="model. password"
           required minlength="4" #password="ngModel">
@@ -33,7 +33,33 @@
         
 
       </form> 
+       -->
+
+       -<img src="assets/img/logo.png" class="logo" >
+       <div class="login-box">
+         <img src="assets/img/icono.png" class="avatar" alt="Avatar Image">
+         <h1>Login </h1>
+        
+          <form action="#">
+              <div class="form-container">
+                  <label for="">Nombre</label>
+                  <input type="text" required placeholder="Nombre" pattern="^[A-Za-z ]*$">
+                  <span class="icon-left"><i class="zmdi zmdi-check"></i></span>
+                  <span class="msj"></span>
+              </div>
       
+              <div class="form-container">
+                  <label for="">Correo</label>
+                  <input type="email" required placeholder="Ejemplo@gmail.com" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$">
+                  <span class="icon-left"><i class="zmdi zmdi-check"></i></span>
+                  <span class="msj"></span>
+              </div>
+      
+              
+              <button type="submit" class="btn btn-default" (click)="refrescar()">Enviar</button>
+          
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+          </form>
     
 
 

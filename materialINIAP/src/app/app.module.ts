@@ -7,15 +7,15 @@ import { ComponentsRoutingModule } from './components/components-routing.module'
 import { ComponentsModule } from './components/components.module';
 import { PagesModule } from './pages/pages.module';
 import {FormsModule }from '@angular/forms';
-import { PasswordDirective } from './validations/password.directive';
-import { PasswordValidationDirective } from './validations/password-validation.directive';
+// import { PasswordDirective } from './validations/password.directive';
+// import { PasswordValidationDirective } from './validations/password-validation.directive';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-     PasswordDirective,
-    PasswordValidationDirective,
+    //  PasswordDirective,
+    // PasswordValidationDirective,
   ],
   imports: [
     BrowserModule,

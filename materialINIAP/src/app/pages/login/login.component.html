@@ -1,26 +1,40 @@
 
+<form (submit)="submit()" #formularioRegistro="ngForm">
+   <div class="form-group">
+     <label for="username">username</label>
+         <input type="text" autocomplete="off" class="form-control" id="username" name="username" required 
+          [(ngModel)]="model.username" #username="ngModel">
 
-<img src="assets/img/logo.png" class="logo" >
-<div class="login-box">
-  <img src="assets/img/icono.png" class="avatar" alt="Avatar Image">
-  <h1>Login </h1>
-
-      <form (submit)="submit()">
+        <div *ngIf="username.invalid  && (username.dirty || username.touched)" class="alert alert-danger">
+          <div *ngIf="username.errors.">
+            username is required.
+          </div>
+        </div>
+        </div>
         
-        <label for="Username" >Correo Electronico </label>
-        <input type="text"  placeholder="Enter Email" [(ngModel)]="model.username" name="username">
-        <label for="password">Contraseña<a href=""></a></label>
-        <input type="password" placeholder="Enter Password" [(ngModel)]="model.password" name="password">
-        
-        <form >
-          <input  type="submit" value="Entrar" (click)="navHome()">
-        </form>
 
-        <input  type="submit" value="Refrescar">
-      </form>
-  
- 
-  
+        <div class="form-gssroup">
+          <label for=" password"> password</label>
+          <input type="= password" class="form-control" id=" password" name=" password" [(ngModel)]="model. password"
+          required minlength="4" #password="ngModel">
+
+          <div *ngIf="password.invalid  && (password.dirty || password.touched)" class="alert alert-danger">
+            <div *ngIf="password.errors">
+              password is required.
+            </div>
+          </div>
+          <div **ngIf="password.errors.minlength">
+            la longitud minima del password debe de ser de 4 caracteres.
+          </div>
+        </div>
+        
+        <button type="submit" class="btn btn-success" [disabled]="!formularioRegistro.form.valid" >Enviar</button>
+        <button type="submit" class="btn btn-default" (click)="refrescar()">Refrescar</button>
+        
+
+      </form> 
+      
+    
 
 
 

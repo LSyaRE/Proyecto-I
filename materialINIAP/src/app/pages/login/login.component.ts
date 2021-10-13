@@ -20,5 +20,13 @@ export class LoginComponent implements OnInit {
     this.router.navigate(['/home'])
   }
   submit(){
-    console.log(this.model)}
+    console.log(this.model)
+  
+  }
+
+refrescar(){
+  this.model= {username:'', password:'',};
 }
+
+
+  }

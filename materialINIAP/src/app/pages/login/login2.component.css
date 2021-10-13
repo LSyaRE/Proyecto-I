@@ -63,11 +63,13 @@ input[type="email"]:focus:invalid ~ .msj::after{
     content: 'Ingrese un correo válido';
 }
 
+input[type="text"]:focus:invalid ~ .msj::after{
+    content: 'Ingrese textos';
+}
+
 
 input:valid + .icon-left{
     color: green;
     display: block;
 }
- .h1{
-     text-align: center;
- }
+ 

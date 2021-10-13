@@ -24,7 +24,7 @@ export class LoginComponent implements OnInit {
   
   }
 
-refrescar(){
+  Enviar(){
   this.model= {username:'', password:'',};
 }
 

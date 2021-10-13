@@ -1,65 +1,45 @@
 
-<!-- <form (submit)="submit()" #formularioRegistro="ngForm" class="tabla">
-   <div class="form-group">
-     <label for="username">username</label>
-         <input type="text" autocomplete="off" class="form-control" id="username" name="username" 
-          required  [(ngModel)]="model.username" #username="ngModel">
-
-        <div *ngIf="username.invalid  && (username.dirty || username.touched)" class="alert alert-danger">
-          <div *ngIf="username.errors">
-            username is required.
+      -<img src="assets/img/logo.png" class="logo" >
+      <div class="login-box">
+        <img src="assets/img/icono.png" class="avatar" alt="Avatar Image">
+        <h1>Login </h1>
+       
+         <form action="#">
+             <div class="form-container">
+                 <label for="">Nombre</label>
+                 <input type="text" required placeholder="Nombre" pattern="[a-zA-Z0-9-]{1,15}">
+                 <span class="icon-left"><i class="zmdi zmdi-check"></i></span>
+                 <span class="msj"></span>
+             </div>
+     
+             <div class="form-container">
+                 <label for="">Correo</label>
+                 <input type="email" required placeholder="Ejemplo@gmail.com" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$">
+                 <span class="icon-left"><i class="zmdi zmdi-check"></i></span>
+                 <span class="msj"></span>
+             </div>
+     
+             <div class="form-container">
+              <label for="">Password</label>
+              <input type="text" required placeholder="Password" pattern="[a-zA-Z0-9-]{1,15}">
+              <span class="icon-left"><i class="zmdi zmdi-check"></i></span>
+              <span class="msj"></span>
           </div>
-        </div>
-        </div>
-        
-
-        <div class="form-group">
-          <label for=" password"> password</label>
-          <input type="= password" class="form-control" id=" password" name=" password" [(ngModel)]="model. password"
-          required minlength="4" #password="ngModel">
-
-          <div *ngIf="password.invalid  && (password.dirty || password.touched)" class="alert alert-danger">
-            <div *ngIf="password.errors">
-              password is required.
-            </div>
-          </div>
-          <div *ngIf="password.errors">
-            la longitud minima del password debe de ser de 4 caracteres.
-          </div>
-        </div>
-        
-        <button type="submit" class="btn btn-success" (disabled)="!formularioRegistro.form.valid" >Enviar</button>
-        <button type="submit" class="btn btn-default" (click)="refrescar()">Refrescar</button>
-        
-
-      </form> 
-       -->
-
-       -<img src="assets/img/logo.png" class="logo" >
-       <div class="login-box">
-         <img src="assets/img/icono.png" class="avatar" alt="Avatar Image">
-         <h1>Login </h1>
-        
-          <form action="#">
-              <div class="form-container">
-                  <label for="">Nombre</label>
-                  <input type="text" required placeholder="Nombre" pattern="^[A-Za-z ]*$">
-                  <span class="icon-left"><i class="zmdi zmdi-check"></i></span>
-                  <span class="msj"></span>
-              </div>
-      
-              <div class="form-container">
-                  <label for="">Correo</label>
-                  <input type="email" required placeholder="Ejemplo@gmail.com" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$">
-                  <span class="icon-left"><i class="zmdi zmdi-check"></i></span>
-                  <span class="msj"></span>
-              </div>
-      
-              
-              <button type="submit" class="btn btn-default" (click)="refrescar()">Enviar</button>
-          
-              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+  
+ 
+           <form (click)='navHome()'>
+            <input  type="submit" value="Entrar">
           </form>
+         
+             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+         </form>
+   
+
+
+
+ 
+ 
+ 
     
 
 

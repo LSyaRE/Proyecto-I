@@ -55,10 +55,6 @@ input:focus:invalid ~ .msj::after{
     right: 0;
 }
 
-input[type="text"]:focus:invalid ~ .msj::after{
-    content: 'Ingrese sólo texto';
-}
-
 input[type="email"]:focus:invalid ~ .msj::after{
     content: 'Ingrese un correo válido';
 }

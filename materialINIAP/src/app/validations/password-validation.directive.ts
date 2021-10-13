@@ -12,8 +12,8 @@ export class PasswordValidationDirective  implements Validator{
   validate(control:import("@angular/forms").AbstractControl): import("@angular/forms").ValidationErrors {
     const password= <string>control.value;
 
-    // if (!password) {return;}
-    // if (password.length < 4) {return;}
+     if (!password) {return;}
+     if (password.length < 4) {return;}
 
     if (this.passwordsProhibidos.indexOf(password) !== -1){
       return {'passwordValidation':{'message':'Escoge un mejos password'}}

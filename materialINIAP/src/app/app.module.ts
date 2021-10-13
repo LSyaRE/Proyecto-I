@@ -14,7 +14,7 @@ import { PasswordValidationDirective } from './validations/password-validation.d
 @NgModule({
   declarations: [
     AppComponent,
-    PasswordDirective,
+     PasswordDirective,
     PasswordValidationDirective,
   ],
   imports: [

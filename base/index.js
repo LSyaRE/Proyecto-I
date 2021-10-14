@@ -1,46 +1,25 @@
-const { Pool}= require('pg')
 
-const config ={
-    user: 'postgres',
-    host: 'localhost',
-    password:'12345',
-    database:'iniap'
-};
+require('./config/conexion')
 
-const pool= new Pool(config);
+const express = require('express');
+const port = (process.env.port || 3000);
 
-const getUsers = async () => {
+//express
+const app = express()
 
-    try {
-    const res= await pool.query('select * from users');
-    console.log(res.rows)
-    // pool.end(); acaba la conexion
+//config
+app.set('port',port);
 
-        
-    } catch (error) {
-        console.log(error)
-        
+//rutas
+app.use('/api',require('./rutas'))
+
+//iniciar express
+app.listen(app.get('port'),(error)=>{
+    if (error){
+
+        console.log('error al iniciar el servidor '+error)
     }
-    
-}
-
-const insertUsers = async () => {
-
-    try {
-
-    const text=  'INSERT INTO users VALUES ($1,$2,$3);'
-    const values= ['10','Alan','INIAP2021'] 
-    const res= await pool.query(text,values);
-
-    console.log(res)
-    // pool.end(); acaba la conexion
-
-        
-    } catch (error) {
-        console.log(error)
-        
+    else{
+        console.log('Servidor iniciado en el puerto:'+port)
     }
-    
-}
-insertUsers()
-getUsers()
+})

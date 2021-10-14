@@ -1,4 +1,4 @@
-create database INIAP;
+create database if not exists iniap;
 
 create table prueba(
 
@@ -19,6 +19,6 @@ create table users(
 );
 
 INSERT INTO users VALUES 
-(1,'Jonas','INIAP2021',
-(2,'Valeria','INIAP2021',
-(3,'Joshua','INIAP2021',;
+(1,'Jonas','INIAP2021'),
+(2,'Valeria','INIAP2021'),
+(3,'Joshua','INIAP2021');

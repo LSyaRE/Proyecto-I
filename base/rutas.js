@@ -4,7 +4,7 @@ const conexion = require('./config/conexion')
 
 //----------Asignacion de Rutas------------
 
-router.get('/',(req, res)=>{
+rutas.get('/',(req, res)=>{
     let sql ='select * from users'
     conexion.query(sql,(err, rows, fields)=>{
         if(err) throw err;
@@ -16,7 +16,7 @@ router.get('/',(req, res)=>{
 })
 
 // get un equipo
-router.get('/:id',(req, res)=>{
+rutas.get('/:id',(req, res)=>{
     const {id} = req.params
     let sql ='select * from users where id_user = ?'
     conexion.query(sql,[id],(err, rows, fields)=>{
@@ -28,7 +28,7 @@ router.get('/:id',(req, res)=>{
 })
 
 //agregar equipo
-router.post('/',( req, res)=>{
+rutas.post('/',( req, res)=>{
     const{nombre, password} = req.body
 
     let sql = `insert into users(nombre, password_user) values('${nombre}','${password}')`
@@ -41,7 +41,7 @@ router.post('/',( req, res)=>{
 })
 
 //eliminar 
-router.delete('/:id',(req, res)=>{
+rutas.delete('/:id',(req, res)=>{
     const{id} = req.params
 
     let sql =`delete from users where id_user = '${id}'`
@@ -54,13 +54,13 @@ router.delete('/:id',(req, res)=>{
 });
 
 //modificar
-router.put('/:id',(req, res)=>{
+rutas.put('/:id',(req, res)=>{
     const{id}=req.params
     const{nombre, password} = req.body
 
     let sql = `update users set 
                 nombre ='${nombre}',
-                logo='${password}'
+                password='${password}'
                 where id_user = '${id}'`
     
     conexion.query(sql, (err, rows, fields)=>{

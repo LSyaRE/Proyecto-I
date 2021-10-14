@@ -18,7 +18,7 @@ import { EstablesComponent } from './estables/estables.component';
 import { MantenimientoComponent } from './mantenimiento/mantenimiento.component';
 import { NavegacionComponent } from './navegacion/navegacion.component';
 import { ComponentsComponent } from './components.component';
-
+import {HttpClientModule }from '@angular/common/http';
 
 
 
@@ -45,7 +45,8 @@ import { ComponentsComponent } from './components.component';
   ],
   imports: [
     CommonModule,
-    ComponentsRoutingModule
+    ComponentsRoutingModule,
+    HttpClientModule
     
   ],
   exports:[

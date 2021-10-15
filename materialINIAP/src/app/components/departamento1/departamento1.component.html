@@ -1,15 +1,15 @@
-
-
- <STYLE type="text/css">
-  H1 { text-align: center}
- </STYLE>
+<STYLE type="text/css">
+  H1 {
+    text-align: center
+  }
+</STYLE>
 
 <body>
-   
-    <body>
-      <div class="main-container">
-        <table class="table table-dark table-striped"  >
-          <thead class="box">
+
+  <body>
+    <div class="main-container">
+      <table class="table table-dark table-striped">
+        <thead class="box">
           <tr>
             <th scope="col">#</th>
             <th scope="col">Responsable</th>
@@ -184,9 +184,88 @@
             <td>2012</td>
             <td>Bueno</td>
           </tr>
-    
+
         </tbody>
       </table>
+
+
+
+
+
+
+
     </div>
- 
-</body>
+
+  </body>
+
+
+<!-- Esta es la parte para el filtro solo en Html
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js">
+    <link rel="" href="https://cdn.datatables.net/fixedheader/3.1.6/css/fixedHeader.dataTables.min.css">
+
+    <style>
+      table th {
+        background-color: aqua;
+        color: bisque;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <table id="example" class="display" style="width: 100%;">
+      <thead>
+        <tr>
+        <tr>
+          <th>Tiger Nixon</th>
+          <th>System Architect</th>
+          <th>Edinburgh</th>
+          <th>61</th>
+          <th>2011/04/25</th>
+          <th>$320,800</th>
+        </tr>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/fixedheader/3.1.6/js/dataTables.fixedHeader.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        var table = $('#example').DataTable({
+          orderCellsTop: true,
+          fixedHeader: true
+        });
+      });
+
+      $('#examples thead tr ').clone(true).appendTo('#example thead');
+
+      $('#example thead tr:eq(1) th').each(function (i) {
+        var title = $(this).text(); //es el nombre de una columna
+        $(this).html('<input type="text" placeholder= "Buscar..."/>');
+
+        $('input', this).on('keyup change', function () {
+          if (table.colum(i).search() !== this.value) {
+            table
+              .colum(i)
+              .search(this.value)
+              .draw();
+          }
+        });
+      });
+
+    </script>
+
+
+
+  </body>
+
+  </html> -->

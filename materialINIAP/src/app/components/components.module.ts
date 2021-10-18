@@ -19,6 +19,7 @@ import { MantenimientoComponent } from './mantenimiento/mantenimiento.component'
 import { NavegacionComponent } from './navegacion/navegacion.component';
 import { ComponentsComponent } from './components.component';
 import {HttpClientModule }from '@angular/common/http';
+import { BienvenidaComponent } from './bienvenida/bienvenida.component';
 
 
 
@@ -40,7 +41,8 @@ import {HttpClientModule }from '@angular/common/http';
     EstablesComponent,
     MantenimientoComponent,
     NavegacionComponent,
-    ComponentsComponent
+    ComponentsComponent,
+    BienvenidaComponent
     
   ],
   imports: [

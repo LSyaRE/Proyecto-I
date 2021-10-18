@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { ConnbdService } from 'src/app/services/connbd.service';
+
 
 
 @Component({
@@ -13,19 +13,12 @@ export class NavegacionComponent implements OnInit {
   nombre: string = 'Direccion General'
   opcion: string = '';
 
-  constructor(private connbdService: ConnbdService) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
 
-  listarUser() {
-    this.connbdService.getUsers().subscribe(
-      res => {
-        console.log(res)
-      },
-      err => console.log(err)
-    );
-  }
+
 
 
 }

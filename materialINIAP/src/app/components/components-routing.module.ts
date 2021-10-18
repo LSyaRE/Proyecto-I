@@ -34,7 +34,7 @@ const routes: Routes = [
       {path:'departamento7',component:Departamento7Component},
       {path:'departamento8',component:Departamento8Component},
       {path:'departamento9',component:Departamento9Component},
-      {path:'departamento10',component:Departamento10Component,resolve:{listado:InventarioResolver}},
+      {path:'departamento10',component:Departamento10Component},
       {path:'departamento11',component:Departamento11Component},
       {path:'malos',component:EliminadosComponent},
       {path:'buenos',component:EstablesComponent},

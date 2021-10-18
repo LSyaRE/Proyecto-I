@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BienvenidaComponent } from './bienvenida/bienvenida.component';
 import { ComponentsComponent } from './components.component';
 import { Departamento1Component } from './departamento1/departamento1.component';
 import { Departamento10Component } from './departamento10/departamento10.component';
@@ -23,7 +22,6 @@ import { MantenimientoComponent } from './mantenimiento/mantenimiento.component'
 const routes: Routes = [
   {path:'home',component:ComponentsComponent, 
     children:[
-      {path:'inicio',component:BienvenidaComponent},
       {path:'departamento1',component:Departamento1Component},
       {path:'departamento2',component:Departamento2Component},
       {path:'departamento3',component:Departamento3Component},
@@ -38,8 +36,7 @@ const routes: Routes = [
       {path:'malos',component:EliminadosComponent},
       {path:'buenos',component:EstablesComponent},
       {path:'regulares',component:MantenimientoComponent},
-      {path:'',redirectTo:'/home/inicio',pathMatch:'full'},
-      {path:'**',redirectTo:'/home/inicio',pathMatch:'full'},
+      {path:'',redirectTo:'/login',pathMatch:'full'},
     ]}
 
 ]

@@ -12,6 +12,9 @@ import { Departamento6Component } from './departamento6/departamento6.component'
 import { Departamento7Component } from './departamento7/departamento7.component';
 import { Departamento8Component } from './departamento8/departamento8.component';
 import { Departamento9Component } from './departamento9/departamento9.component';
+import { EliminadosComponent } from './eliminados/eliminados.component';
+import { EstablesComponent } from './estables/estables.component';
+import { MantenimientoComponent } from './mantenimiento/mantenimiento.component';
 
 
 
@@ -30,6 +33,10 @@ const routes: Routes = [
       {path:'departamento9',component:Departamento9Component},
       {path:'departamento10',component:Departamento10Component},
       {path:'departamento11',component:Departamento11Component},
+      {path:'malos',component:EliminadosComponent},
+      {path:'buenos',component:EstablesComponent},
+      {path:'regulares',component:MantenimientoComponent},
+      {path:'',redirectTo:'/login',pathMatch:'full'},
     ]}
 
 ]

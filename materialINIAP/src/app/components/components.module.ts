@@ -20,6 +20,8 @@ import { NavegacionComponent } from './navegacion/navegacion.component';
 import { ComponentsComponent } from './components.component';
 import {HttpClientModule }from '@angular/common/http';
 import { BienvenidaComponent } from './bienvenida/bienvenida.component';
+import { ProviderAst } from '@angular/compiler';
+import { FiltroService } from '../services/Minventario/filtro/filtro.service';
 
 
 
@@ -44,7 +46,8 @@ import { BienvenidaComponent } from './bienvenida/bienvenida.component';
     ComponentsComponent,
     BienvenidaComponent
     
-  ],
+  ],  
+  providers: [FiltroService],
   imports: [
     CommonModule,
     ComponentsRoutingModule,
@@ -73,4 +76,6 @@ import { BienvenidaComponent } from './bienvenida/bienvenida.component';
 
   ]
 })
-export class ComponentsModule { }
+export class ComponentsModule {
+
+ }

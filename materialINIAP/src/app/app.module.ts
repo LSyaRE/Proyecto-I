@@ -8,6 +8,7 @@ import { ComponentsModule } from './components/components.module';
 import { PagesModule } from './pages/pages.module';
 import {FormsModule }from '@angular/forms';
 import { FiltroEquiposPipe } from './services/pipes/filtro-equipos.pipe';
+import { PostsComponent } from './posts/posts.component';
 
 // import { PasswordDirective } from './validations/password.directive';
 // import { PasswordValidationDirective } from './validations/password-validation.directive';
@@ -17,6 +18,7 @@ import { FiltroEquiposPipe } from './services/pipes/filtro-equipos.pipe';
   declarations: [
     AppComponent,
     FiltroEquiposPipe,
+    PostsComponent,
     //  PasswordDirective,
     // PasswordValidationDirective,
   ],

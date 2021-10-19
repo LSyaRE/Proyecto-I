@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FiltroService } from 'src/app/services/Minventario/filtro/filtro.service';
 
 @Component({
   selector: 'app-departamento7',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Departamento7Component implements OnInit {
 
-  constructor() { }
+  constructor(
+    filtro:FiltroService
+  ) { }
 
   ngOnInit(): void {
   }

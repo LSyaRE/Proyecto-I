@@ -55,8 +55,9 @@ router.get('/:id',async (req,res)=>{
 router.post('/', async (req,res)=>{
 
     try {
-        let sql = `insert into users(nombre,password_user) values ('${nom}','${pass}')`;
-        const data = await db.query(sql,(err,rows,fiedls)=>{
+        const {nom,pass}= req.body;
+        let sql = `insert into users(nombre,password_user) values ($1,$2)`;
+        const data = await db.query(sql,[nom,pass],(err,rows,fiedls)=>{
 
             if (err) throw err;
             else{

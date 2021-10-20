@@ -20,9 +20,9 @@ router.get('/',async (req,res)=>{
         const sql = 'select * from users';
         const data = await db.query(sql,(err,rows,fiedls)=>{
 
-            if (err)throw err;
+            if (err) throw err;
             else{
-                res.json(rows)
+                res.json(rows.rows)
             }
         });
         
@@ -33,25 +33,41 @@ router.get('/',async (req,res)=>{
     });
 
 //Muestra a un usuario
-router.get('/',async (req,res)=>{
+router.get('/:id',async (req,res)=>{
 
     try {
-        const {id}= req.params;
-        let sql = 'select * from users where id_user= ?';
+        const {id} = req.params;
+        let sql = 'select * from users where id_user= $1';
         const data = await db.query(sql,[id],(err,rows,fiedls)=>{
 
-            if (err)throw err;
+            if (err) throw err;
             else{
-                res.json(rows)
+                res.json(rows.rows)
             }
         });
-        
         
     } catch (e) {
         console.log(e);
     }    
     });
 
+//Agregar usuario
+router.post('/', async (req,res)=>{
+
+    try {
+        let sql = `insert into users(nombre,password_user) values ('${nom}','${pass}')`;
+        const data = await db.query(sql,(err,rows,fiedls)=>{
+
+            if (err) throw err;
+            else{
+                res.json({status:'equipo agregado'})
+            }
+        });
+
+    } catch (e) {
+        console.log(e);
+    }
+})
    
 
 

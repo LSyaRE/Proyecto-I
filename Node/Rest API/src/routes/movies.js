@@ -41,7 +41,7 @@ router.put('/:id',(req,res)=>{
         res.json(movies);
     }
     else{
-        res
+        console.document('Error')
     }
 
 });

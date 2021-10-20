@@ -17,12 +17,13 @@ app.set('json spaces',2);
 
 
 //routes 
-app.use(require('./routes/index'));
+app.use('/api/inicio',require('./routes/index'));
+app.use('/api/movies',require('./routes/movies'));
 
 
 
 
-// empezando servidor 
+// start server
 app.listen(app.get('port'),() =>{
 
     console.log(`Server on port  ${app.get('port')}`);

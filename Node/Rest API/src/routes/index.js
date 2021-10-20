@@ -12,11 +12,40 @@ const db = new Pool(config);
 
 const router = Router();
 
+
+// Muestra todos los usuarios
 router.get('/',async (req,res)=>{
 
     try {
-        const data = await db.query('select * from users');
-        res.json(data.rows)
+        const sql = 'select * from users';
+        const data = await db.query(sql,(err,rows,fiedls)=>{
+
+            if (err)throw err;
+            else{
+                res.json(rows)
+            }
+        });
+        
+        
+    } catch (e) {
+        console.log(e);
+    }    
+    });
+
+//Muestra a un usuario
+router.get('/',async (req,res)=>{
+
+    try {
+        const {id}= req.params;
+        let sql = 'select * from users where id_user= ?';
+        const data = await db.query(sql,[id],(err,rows,fiedls)=>{
+
+            if (err)throw err;
+            else{
+                res.json(rows)
+            }
+        });
+        
         
     } catch (e) {
         console.log(e);

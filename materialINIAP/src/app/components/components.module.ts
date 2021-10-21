@@ -22,6 +22,7 @@ import {HttpClientModule }from '@angular/common/http';
 import { BienvenidaComponent } from './bienvenida/bienvenida.component';
 import { FiltroService } from '../services/Minventario/filtro/filtro.service';
 import { FormsModule } from '@angular/forms';
+import { PostsComponent } from './posts/posts.component';
 
 
 @NgModule({
@@ -44,6 +45,7 @@ import { FormsModule } from '@angular/forms';
     NavegacionComponent,
     ComponentsComponent,
     BienvenidaComponent,
+    PostsComponent,
 
     
   ],  

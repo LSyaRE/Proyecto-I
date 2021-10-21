@@ -19,10 +19,10 @@
                 </tr>
             </thead>
         <tbody>
-            <tr *ngFor="let post of posts | filter:filterPost">
-                <td>{{post.id}}</td>
-                <td>{{post.titulo}}</td>
-                <td>{{post.fecha}}</td>
+            <tr *ngFor="let Post of Posts | filter:filterPost">
+                <td>{{Post.id}}</td>
+                <td>{{Post.titulo}}</td>
+                <td>{{Post.fecha}}</td>
             </tr>
         </tbody>
     </table>

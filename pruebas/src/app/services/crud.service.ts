@@ -8,22 +8,24 @@ import {Usuario} from './../interfaces/usuarios/usuario'
   providedIn: 'root'
 })
 export class CrudService {
-
+  //En la url se coloca donde esta ubicado el REST API
   url= 'http://localhost:3000/api/inicio';
+  
+  //Dentro del constructor se instancio el servicio de http
   constructor(
                 private http: HttpClient,
                 
               ) { }
 
 
-//get usuarios
+//get usuarios:obtiene todos los usuarios
 getUsuarios()
 {
   return this.http.get(this.url);
 }; 
 
 
-//get un usuario
+//get un usuario: obtiene solo un usuario
 getUnUsuarios(id:string)
 {
   return this.http.get(this.url+'/'+id);

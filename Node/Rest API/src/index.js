@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const morgan = require('morgan');
-
+const cors = require('cors'); 
 
 
 
@@ -9,7 +9,7 @@ const morgan = require('morgan');
 app.use(morgan('dev'));
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
-
+app.use(cors())
 
 //settings
 app.set('port', process.env.PORT || 3000);

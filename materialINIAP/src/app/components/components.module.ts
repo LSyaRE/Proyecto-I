@@ -23,6 +23,7 @@ import { BienvenidaComponent } from './bienvenida/bienvenida.component';
 import { FiltroService } from '../services/Minventario/filtro/filtro.service';
 import { FormsModule } from '@angular/forms';
 import { PostsComponent } from './posts/posts.component';
+import { BrowserModule } from '@angular/platform-browser';
 
 
 @NgModule({
@@ -52,6 +53,7 @@ import { PostsComponent } from './posts/posts.component';
   providers: [FiltroService],
   imports: [
     CommonModule,
+    BrowserModule,
     ComponentsRoutingModule,
     HttpClientModule,
     FormsModule

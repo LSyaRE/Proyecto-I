@@ -11,6 +11,7 @@ import { FilterPipe } from './filter.pipe';
 
 
 
+
 // import { PasswordDirective } from './validations/password.directive';
 // import { PasswordValidationDirective } from './validations/password-validation.directive';
 
@@ -31,7 +32,8 @@ import { FilterPipe } from './filter.pipe';
     AppRoutingModule,
     FormsModule,
     ComponentsModule,
-    PagesModule
+    PagesModule,
+    
 
   ],
   providers: [],

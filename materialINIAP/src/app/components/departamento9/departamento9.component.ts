@@ -6,10 +6,32 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./departamento9.component.css']
 })
 export class Departamento9Component implements OnInit {
-
+ FilterPost ='';
+  posts =[
+    {
+      "id":1,
+      "titulo": "Post One",
+      "fecha": "02/8/2021"
+    },
+    {
+      "id":1,
+      "titulo": "Post One",
+      "fecha": "02/8/2021"
+    },
+    {
+      "id":1,
+      "titulo": "Post One",
+      "fecha": "02/8/2021"
+    },
+    {
+      "id":1,
+      "titulo": "Post One",
+      "fecha": "02/8/2021"
+    }
+  ]
   constructor() { }
-
+  
   ngOnInit(): void {
   }
-
+ 
 }

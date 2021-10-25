@@ -1,4 +1,4 @@
-        <!-- <div class="container">
+        <div class="container">
             <h1>departamento 9</h1>
             <div class="form.group">
                 <input 
@@ -19,11 +19,11 @@
                 </tr>
             </thead>
         <tbody>
-            <tr >
-                <td>{{Post.id}}</td>
-                <td>{{Post.titulo}}</td>
-                <td>{{Post.fecha}}</td>
+            <tr *ngFor="let post of posts "> 
+                <td>{{post.id}}</td>
+                <td>{{post.titulo}}</td>
+                <td>{{post.fecha}}</td>
             </tr>
         </tbody>
     </table>
-</div> -->
+</div>

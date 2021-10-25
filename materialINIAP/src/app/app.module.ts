@@ -10,6 +10,7 @@ import {FormsModule }from '@angular/forms';
 import { FilterPipe } from './filter.pipe';
 
 
+
 // import { PasswordDirective } from './validations/password.directive';
 // import { PasswordValidationDirective } from './validations/password-validation.directive';
 
@@ -19,6 +20,7 @@ import { FilterPipe } from './filter.pipe';
     AppComponent,
    
     FilterPipe,
+
     
     //  PasswordDirective,
     // PasswordValidationDirective,

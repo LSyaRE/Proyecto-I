@@ -56,8 +56,8 @@ import { BrowserModule } from '@angular/platform-browser';
     BrowserModule,
     ComponentsRoutingModule,
     HttpClientModule,
-    FormsModule
-    
+    FormsModule,
+ 
   ],
   exports:[
     

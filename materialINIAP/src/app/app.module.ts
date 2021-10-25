@@ -11,7 +11,6 @@ import { FilterPipe } from './filter.pipe';
 
 
 
-
 // import { PasswordDirective } from './validations/password.directive';
 // import { PasswordValidationDirective } from './validations/password-validation.directive';
 
@@ -19,7 +18,7 @@ import { FilterPipe } from './filter.pipe';
 @NgModule({
   declarations: [
     AppComponent,
-   
+  
     FilterPipe,
 
     
@@ -33,10 +32,13 @@ import { FilterPipe } from './filter.pipe';
     FormsModule,
     ComponentsModule,
     PagesModule,
-    
+  
+  
 
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+

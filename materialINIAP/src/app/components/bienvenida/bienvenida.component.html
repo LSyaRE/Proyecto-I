@@ -1,1 +1,32 @@
-<h1> Bienvenido al sistema de Inventario del INIAP</h1>
+<!-- para los modales en jquery
+    <head>
+<scrip src=https://code.jquery.com/jquery-3.1.1.slim.min.js></scrip>
+<script>
+    $(document).on('click','abtn-modal', fuction(){
+        $('#modal-ejemplo'.modal('show');
+});
+
+</script>
+</head> -->
+<h1>Bienvenidos </h1>
+ <body>
+     <div class ="container">
+        <div class="modal" tabindex="-1" id="modal1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        encabezado
+                    </div>
+                    <div class="modal-body">
+                        cuerpo del modal
+                    </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary">Guardar Cambios</button>
+                    <button class="btn btn-danger" data-dismiss="modal">&times;</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary" type="button" data-toggle='modal' data-target="#modal1">Mostrar Modal</button>
+     </div>
+ </body>

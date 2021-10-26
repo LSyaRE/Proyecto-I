@@ -46,7 +46,7 @@ import { BrowserModule } from '@angular/platform-browser';
     NavegacionComponent,
     ComponentsComponent,
     BienvenidaComponent,
-    PostsComponent,
+    PostsComponent
 
     
   ],  
@@ -56,7 +56,8 @@ import { BrowserModule } from '@angular/platform-browser';
     BrowserModule,
     ComponentsRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    
     
   ],
   exports:[

@@ -28,7 +28,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatTableModule} from '@angular/material/table';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
+import {MatIconModule } from '@angular/material/icon';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
@@ -64,7 +67,11 @@ import {MatTableModule} from '@angular/material/table';
     ReactiveFormsModule,
     MatInputModule,
     MatFormFieldModule,
-    MatTableModule
+    MatTableModule,
+    BrowserAnimationsModule,
+    MatSliderModule,
+    MatIconModule,
+    MatTooltipModule
     
     
     
@@ -87,7 +94,8 @@ import {MatTableModule} from '@angular/material/table';
     MantenimientoComponent,
     NavegacionComponent,
     ComponentsComponent,
-    MatTableModule
+    MatTableModule,
+    MatTooltipModule
     
 
   ]

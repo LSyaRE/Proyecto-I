@@ -21,7 +21,7 @@ export class Departamento11Component implements OnInit {
     
   ];
 
-  displayedColumns: string[] = ['usuario', 'nombre', 'apellido', 'sexo'];
+  displayedColumns: string[] = ['usuario', 'nombre', 'apellido', 'sexo', 'acciones'];
   dataSource = new MatTableDataSource(this.listUsuarios);
   constructor() { }
 

@@ -12,30 +12,45 @@
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
       
-        <!-- Position Column -->
+        <!-- usuario -->
         <ng-container matColumnDef="usuario">
           <th mat-header-cell *matHeaderCellDef> Usuario</th>
           <td mat-cell *matCellDef="let element"> {{element.usuario}} </td>
         </ng-container>
       
-        <!-- Name Column -->
+        <!-- nombre -->
         <ng-container matColumnDef="nombre">
           <th mat-header-cell *matHeaderCellDef> Nombre </th>
           <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
         </ng-container>
       
-        <!-- Weight Column -->
+        <!-- apellido -->
         <ng-container matColumnDef="apellido">
           <th mat-header-cell *matHeaderCellDef> Apellido </th>
           <td mat-cell *matCellDef="let element"> {{element.apellido}} </td>
         </ng-container>
       
-        <!-- Symbol Column -->
+        <!-- sexo -->
         <ng-container matColumnDef="sexo">
           <th mat-header-cell *matHeaderCellDef> Sexo </th>
           <td mat-cell *matCellDef="let element"> {{element.sexo}} </td>
         </ng-container>
+
+        <!-- Aqui estan los iconos de eliminar y editar -->
+            <ng-container matColumnDef="acciones">
+            <th mat-header-cell *matHeaderCellDef>  </th>
+            <td mat-cell *matCellDef="let element" style="text-align: right;"> 
+                <a class="pointer" style="color:rgb(4, 5, 83) ;" matTooltip="Editar Usuario">
+                    <mat-icon>edit</mat-icon>
+                </a> 
+                <a class="pointer" style="color:rgb(153, 4, 4) ;" matTooltip="Eliminar Usuario">
+                    <mat-icon>delete</mat-icon>
+                </a> 
+            </td>
+        
+          </ng-container>
       
+
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
       </table>

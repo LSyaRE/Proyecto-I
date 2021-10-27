@@ -35,7 +35,7 @@ router.get('/:id',async (req,res)=>{
 
     try {
         const {id} = req.params;
-        let sql = 'select * from users where id_user= $1';
+        let sql = 'select * from personas where id_user= $1';
         const data = await db.query(sql,[id],(err,rows,fiedls)=>{
 
             if (err) throw err;

@@ -24,7 +24,9 @@ import { FiltroService } from '../services/Minventario/filtro/filtro.service';
 import { FormsModule } from '@angular/forms';
 import { PostsComponent } from './posts/posts.component';
 import { BrowserModule } from '@angular/platform-browser';
-
+/*Angular material*/
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -57,6 +59,8 @@ import { BrowserModule } from '@angular/platform-browser';
     ComponentsRoutingModule,
     HttpClientModule,
     FormsModule,
+    MatInputModule,
+    MatFormFieldModule
     
     
   ],

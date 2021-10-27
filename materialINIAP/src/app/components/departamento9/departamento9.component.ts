@@ -21,7 +21,7 @@ export class Departamento9Component implements OnInit {
     {
       "id":1,
       "titulo": "Post One",
-      "fecha": "02/8/2021"
+      "fecha": "02/8/200021"
     },
     {
       "id":1,

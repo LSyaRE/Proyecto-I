@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Registro } from './registro';
 import{FormGroup,FormControl,Validators} from '@angular/forms';
+import { CrudService } from 'src/app/services/crud/crud.service';
+import { Usuario } from 'src/app/interface/usuarios/usuario';
 
 
 @Component({
@@ -22,7 +24,7 @@ export class LoginComponent implements OnInit {
   model: Registro = {username:'', password:'',};
 
 
-  constructor(private router:Router) { }
+  constructor(private router:Router, private crudService:CrudService) { }
 
   ngOnInit(): void {
   }
@@ -34,10 +36,10 @@ export class LoginComponent implements OnInit {
   
   
     }
-    submit(form:any){
-      console.log(this.model)
-      console.log(form)
-      this.router.navigate(['/home'])
+    submit(form:Usuario){
+      this.crudService.getUsuarios().subscribe(data => {
+        console.log(data);
+      });
     }
 
  

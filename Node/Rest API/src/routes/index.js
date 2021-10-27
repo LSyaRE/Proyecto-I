@@ -2,13 +2,7 @@ const {Router }=require('express');
 const {Pool}=require('pg');
 const _ = require('underscore');
 
-
- const config ={
-     user: 'postgres',
-     host:'localhost',
-     password:'Porawiin.1',
-     database:'iniap'
- } 
+const config =require('./database/db')
 
 const db = new Pool(config);
 

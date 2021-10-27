@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Usuario } from 'src/app/interface/usuarios/usuario';
+import { Persona } from 'src/app/interface/personas/persona';
+
 
 @Injectable({
   providedIn: 'root'
@@ -31,7 +32,7 @@ getUnUsuarios(id:string)
 };
 
 //Agregar usuario
-addUsuario(usuario:Usuario){
+addUsuario(usuario:Persona){
   
   return this.http.post(this.url,usuario);
 
@@ -44,7 +45,7 @@ deleteUsuario(id:'string'){
 
 
 //Modificar usuario
-modifyUsuario(id:string, usuario:Usuario){
+modifyUsuario(id:string, usuario:Persona){
   return this.http.put(this.url+'/'+id,usuario);
 }
 }

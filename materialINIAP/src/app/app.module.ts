@@ -38,7 +38,8 @@ import {MatInputModule} from '@angular/material/input';
     PagesModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+ 
   
 
   ],

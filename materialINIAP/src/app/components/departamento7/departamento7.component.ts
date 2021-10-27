@@ -1,18 +1,37 @@
 import { Component, OnInit } from '@angular/core';
-import { FiltroService } from 'src/app/services/Minventario/filtro/filtro.service';
+import { MatTableDataSource } from '@angular/material/table';
+import { Usuario } from 'src/app/interface/usuarios/usuario';
+
 
 @Component({
   selector: 'app-departamento7',
   templateUrl: './departamento7.component.html',
   styleUrls: ['./departamento7.component.css']
 })
+
 export class Departamento7Component implements OnInit {
 
-  constructor(
-    filtro:FiltroService
-  ) { }
+  listUsuarios: Usuario[] = [
+    {usuario: "jperez", nombre: 'juan', apellido:"Perez", sexo: 'Masculino'},
+    {usuario: "gmaria", nombre: 'lola', apellido:"lopez", sexo: 'Femenino'},
+    {usuario: "pepito", nombre: 'juanita', apellido:"Peran", sexo: 'Masculino'},
+    {usuario: "carlo", nombre: 'rome', apellido:"Parra", sexo: 'Femenino'},
+    {usuario: "andrea", nombre: 'ricardo', apellido:"zapata", sexo: 'Masculino'},
+    {usuario: "pedro", nombre: 'carlos', apellido:"garcia", sexo: 'Femeninos'},
+    
+  ];
+
+  displayedColumns: string[] = ['usuario', 'nombre', 'apellido', 'sexo', 'acciones'];
+  dataSource = new MatTableDataSource(this.listUsuarios);
+  constructor() { }
 
   ngOnInit(): void {
   }
 
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
+
 }
+

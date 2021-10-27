@@ -27,7 +27,7 @@ import { BrowserModule } from '@angular/platform-browser';
 /*Angular material*/
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
-import { EventEmitter, Stream } from 'stream';
+
 
 
 @NgModule({
@@ -64,7 +64,7 @@ import { EventEmitter, Stream } from 'stream';
     ReactiveFormsModule,
     MatInputModule,
     MatFormFieldModule,
-    EventEmitter, Stream 
+    
     
     
   ],

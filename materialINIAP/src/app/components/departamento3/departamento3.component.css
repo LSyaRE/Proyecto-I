@@ -1,3 +1,11 @@
+.main-container{
+    background: rgba(70, 75, 74, 0);
+    height: 650px;
+    overflow-y: scroll;
+    width: 155ch;
+}
+
+
 table {
     width: 100%;
     margin-top: 20px;

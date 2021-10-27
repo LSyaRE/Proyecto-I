@@ -12,16 +12,19 @@ import { Usuario } from 'src/app/interface/usuarios/usuario';
 export class Departamento4Component implements OnInit {
 
   listUsuarios: Usuario[] = [
-    {usuario: "jperez", nombre: 'juan', apellido:"Perez", sexo: 'Masculino'},
-    {usuario: "gmaria", nombre: 'lola', apellido:"lopez", sexo: 'Femenino'},
-    {usuario: "pepito", nombre: 'juanita', apellido:"Peran", sexo: 'Masculino'},
-    {usuario: "carlo", nombre: 'rome', apellido:"Parra", sexo: 'Femenino'},
-    {usuario: "andrea", nombre: 'ricardo', apellido:"zapata", sexo: 'Masculino'},
-    {usuario: "pedro", nombre: 'carlos', apellido:"garcia", sexo: 'Femeninos'},
+    {Responsable: "jperez", Equipo: 'juan', Marca :"Perez", Modelo: 'Masculino', Serie:"hbhbn", Mac_Address_Alambrica:"vd", Mac_Inalambrica_Alambrica:"sdvsd",Ip_Alambrica:"dsad", Ip_Inalambrica:"svsd",  Ordinal:"vsdv", Año:"sdfsd", Estado:"ndfsdnf" },
+    {Responsable: "carla", Equipo: 'juan', Marca :"Perez", Modelo: 'Masculino', Serie:"hbhbn", Mac_Address_Alambrica:"vd", Mac_Inalambrica_Alambrica:"sdvsd",Ip_Alambrica:"dsad", Ip_Inalambrica:"svsd",  Ordinal:"vsdv", Año:"sdfsd", Estado:"ndfsdnf" }, 
+    {Responsable: "jperez", Equipo: 'juan', Marca :"Perez", Modelo: 'Masculino', Serie:"hbhbn", Mac_Address_Alambrica:"vd", Mac_Inalambrica_Alambrica:"sdvsd",Ip_Alambrica:"dsad", Ip_Inalambrica:"svsd",  Ordinal:"vsdv", Año:"sdfsd", Estado:"ndfsdnf" }, 
+    {Responsable: "carla", Equipo: 'juan', Marca :"Perez", Modelo: 'Masculino', Serie:"hbhbn", Mac_Address_Alambrica:"vd", Mac_Inalambrica_Alambrica:"sdvsd",Ip_Alambrica:"dsad", Ip_Inalambrica:"svsd",  Ordinal:"vsdv", Año:"sdfsd", Estado:"ndfsdnf" },  
+    {Responsable: "jperez", Equipo: 'juan', Marca :"Perez", Modelo: 'Masculino', Serie:"hbhbn", Mac_Address_Alambrica:"vd", Mac_Inalambrica_Alambrica:"sdvsd",Ip_Alambrica:"dsad", Ip_Inalambrica:"svsd",  Ordinal:"vsdv", Año:"sdfsd", Estado:"ndfsdnf" }, 
+    {Responsable: "carla", Equipo: 'juan', Marca :"Perez", Modelo: 'Masculino', Serie:"hbhbn", Mac_Address_Alambrica:"vd", Mac_Inalambrica_Alambrica:"sdvsd",Ip_Alambrica:"dsad", Ip_Inalambrica:"svsd",  Ordinal:"vsdv", Año:"sdfsd", Estado:"ndfsdnf" },  
+    {Responsable: "jperez", Equipo: 'juan', Marca :"Perez", Modelo: 'Masculino', Serie:"hbhbn", Mac_Address_Alambrica:"vd", Mac_Inalambrica_Alambrica:"sdvsd",Ip_Alambrica:"dsad", Ip_Inalambrica:"svsd",  Ordinal:"vsdv", Año:"sdfsd", Estado:"ndfsdnf" }, 
+    {Responsable: "carla", Equipo: 'juan', Marca :"Perez", Modelo: 'Masculino', Serie:"hbhbn", Mac_Address_Alambrica:"vd", Mac_Inalambrica_Alambrica:"sdvsd",Ip_Alambrica:"dsad", Ip_Inalambrica:"svsd",  Ordinal:"vsdv", Año:"sdfsd", Estado:"ndfsdnf" }, 
+
     
   ];
 
-  displayedColumns: string[] = ['usuario', 'nombre', 'apellido', 'sexo', 'acciones'];
+  displayedColumns: string[] = ['Responsable', 'Equipo', 'Marca', 'Modelo', 'Serie', 'Mac_Address_Alambrica','Mac_Inalambrica_Alambrica','Ip_Alambrica','Ip_Inalambrica','Ordinal','Año','Estado','acciones'];
   dataSource = new MatTableDataSource(this.listUsuarios);
   constructor() { }
 
@@ -34,4 +37,3 @@ export class Departamento4Component implements OnInit {
   }
 
 }
-

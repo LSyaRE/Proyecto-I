@@ -1,12 +1,14 @@
 const {Router }=require('express');
 const {Pool}=require('pg');
+const _ = require('underscore');
 
-const config ={
-    user: 'postgres',
-    host:'localhost',
-    password:'Porawiin.1',
-    database:'iniap'
-} 
+
+ const config ={
+     user: 'postgres',
+     host:'localhost',
+     password:'Porawiin.1',
+     database:'iniap'
+ } 
 
 const db = new Pool(config);
 
@@ -57,14 +59,21 @@ router.post('/', async (req,res)=>{
     try {
         
         const {id,nom,pass}= req.body;
-        let sql = `insert into users values ($1,$2,$3)`;
-        const data = await db.query(sql,[id,nom,pass],(err,rows,fiedls)=>{
+        if (id!=null && nom!=null && pass!=null){
+            let sql = `insert into users values ($1,$2,$3)`;
+            const data = await db.query(sql,[id,nom,pass],(err,rows,fiedls)=>{
+    
+                if (err) throw err;
+                else{
+                    res.json({status:'equipo agregado'})
+                }
+            });
+        }
+        else{
+            console.log('Los valores no deben ser nulos')
+        };
+    
 
-            if (err) throw err;
-            else{
-                res.json({status:'equipo agregado'})
-            }
-        });
 
     } catch (e) {
         console.log(e);

@@ -37,7 +37,7 @@ export class LoginComponent implements OnInit {
     submit(form:any){
       console.log(this.model)
       console.log(form)
-      // this.router.navigate(['/home'])
+      this.router.navigate(['/home'])
     }
 
  

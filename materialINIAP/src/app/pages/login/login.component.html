@@ -6,7 +6,7 @@
   </form>
 
 
-  <form [formGroup]="loginForm" (ngSubmit="submit(loginForm.value)" )>
+  <form [formGroup]="loginForm"  >
     <div class="form-container">
       <label for="">Correo</label>
       <input type="email" required placeholder="Ejemplo@gmail.com"
@@ -18,13 +18,13 @@
 
     <div class="form-container">
       <label for="">Password</label>
-      <input type="text" required placeholder="Password" pattern="[a-zA-Z0-9-]{1,15}" formControlName="Password">
+      <input type="password" required placeholder="Password" pattern="[a-zA-Z0-9-]{1,15}" formControlName="password">
       <span class="icon-left"><i class="zmdi zmdi-check"></i></span>
       <span class="msj"></span>
     </div>
 
 
-    <form>
+    <form (ngSubmit)="submit(loginForm.value)">
       <input type="submit" value="Entrar" id="boton">
     </form>
 

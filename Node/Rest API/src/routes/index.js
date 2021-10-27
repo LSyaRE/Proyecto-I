@@ -9,6 +9,8 @@ const db = new Pool(config);
 const router = Router();
 
 
+
+
 // Muestra todos los usuarios
 router.get('/',async (req,res)=>{
 

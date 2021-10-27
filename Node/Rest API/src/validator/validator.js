@@ -4,13 +4,17 @@ const {validateResult}= require('../helpers/validateHelper')
 
 const validateCreate = [
     check('nombre')
-    .exists
+    .exists()
+    .isEmail()
     .not()
     .isEmpty(),
-    check('')
-    .exists
+    check('password_user')
+    .exists()
     .not()
-    .isEmpty()
+    .isEmpty(),
+    (req,res,next)=>{
+        validateResult(req,res,next)
+    }
 
 ]
 

@@ -27,7 +27,7 @@ import { BrowserModule } from '@angular/platform-browser';
 /*Angular material*/
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
-
+import {MatTableModule} from '@angular/material/table';
 
 
 @NgModule({
@@ -64,6 +64,7 @@ import {MatInputModule} from '@angular/material/input';
     ReactiveFormsModule,
     MatInputModule,
     MatFormFieldModule,
+    MatTableModule
     
     
     
@@ -85,7 +86,8 @@ import {MatInputModule} from '@angular/material/input';
     EstablesComponent,
     MantenimientoComponent,
     NavegacionComponent,
-    ComponentsComponent
+    ComponentsComponent,
+    MatTableModule
     
 
   ]

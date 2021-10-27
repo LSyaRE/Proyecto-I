@@ -7,6 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ComponentsComponent implements OnInit {
 
+ handleSeacrch(Value:string){
+   console.log(Value)
+ }
+
+
+
+
+
+
   constructor() { }
 
   ngOnInit(): void {

@@ -8,8 +8,11 @@ import { ComponentsModule } from './components/components.module';
 import { PagesModule } from './pages/pages.module';
 import {FormsModule, ReactiveFormsModule }from '@angular/forms';
 import { FilterPipe } from './filter.pipe';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
+/*Angular material*/
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 // import { PasswordDirective } from './validations/password.directive';
 // import { PasswordValidationDirective } from './validations/password-validation.directive';
@@ -33,7 +36,9 @@ import { FilterPipe } from './filter.pipe';
     ReactiveFormsModule,
     ComponentsModule,
     PagesModule,
-  
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatInputModule
   
 
   ],

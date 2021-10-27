@@ -9,11 +9,13 @@ const db = new Pool(config);
 const router = Router();
 
 
+
+
 // Muestra todos los usuarios
 router.get('/',async (req,res)=>{
 
     try {
-        const sql = 'select * from users';
+        const sql = 'select * from personas';
         const data = await db.query(sql,(err,rows,fiedls)=>{
 
             if (err) throw err;

@@ -18,18 +18,6 @@ export class Departamento1Component implements OnInit {
     {usuario: "carlo", nombre: 'rome', apellido:"Parra", sexo: 'Femenino'},
     {usuario: "andrea", nombre: 'ricardo', apellido:"zapata", sexo: 'Masculino'},
     {usuario: "pedro", nombre: 'carlos', apellido:"garcia", sexo: 'Femeninos'},
-    {usuario: "jperez", nombre: 'juan', apellido:"Perez", sexo: 'Masculino'},
-    {usuario: "gmaria", nombre: 'lola', apellido:"lopez", sexo: 'Femenino'},
-    {usuario: "pepito", nombre: 'juanita', apellido:"Peran", sexo: 'Masculino'},
-    {usuario: "carlo", nombre: 'rome', apellido:"Parra", sexo: 'Femenino'},
-    {usuario: "andrea", nombre: 'ricardo', apellido:"zapata", sexo: 'Masculino'},
-    {usuario: "pedro", nombre: 'carlos', apellido:"garcia", sexo: 'Femeninos'},
-    {usuario: "jperez", nombre: 'juan', apellido:"Perez", sexo: 'Masculino'},
-    {usuario: "gmaria", nombre: 'lola', apellido:"lopez", sexo: 'Femenino'},
-    {usuario: "pepito", nombre: 'juanita', apellido:"Peran", sexo: 'Masculino'},
-    {usuario: "carlo", nombre: 'rome', apellido:"Parra", sexo: 'Femenino'},
-    {usuario: "andrea", nombre: 'ricardo', apellido:"zapata", sexo: 'Masculino'},
-    {usuario: "pedro", nombre: 'carlos', apellido:"garcia", sexo: 'Femeninos'},
     
   ];
 

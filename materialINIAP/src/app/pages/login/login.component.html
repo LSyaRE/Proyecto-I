@@ -1,46 +1,33 @@
-
-      -<img src="assets/img/logo.png" class="logo" >
-      <div class="login-box">
-        <img src="assets/img/icono.png" class="avatar" alt="Avatar Image">
-        <form class="centrado">
-          <h1>Login </h1>
-        </form>
-        
-       
-         <form action="#">
-             <div class="form-container">
-                 <label for="">Correo</label>
-                 <input type="email" required placeholder="Ejemplo@gmail.com" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$">
-                 <span class="icon-left"><i class="zmdi zmdi-check"></i></span>
-                 <span class="msj"></span>
-             </div>
-     
-             <div class="form-container">
-              <label for="">Password</label>
-              <input type="text" required placeholder="Password" pattern="[a-zA-Z0-9-]{1,15}">
-              <span class="icon-left"><i class="zmdi zmdi-check"></i></span>
-              <span class="msj"></span>
-          </div>
-  
- 
-           <form (click)='navHome()'>
-            <input  type="submit" value="Entrar" id="boton">
-          </form>
-         
-             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-         </form>
-   
+-<img src="assets/img/logo.png" class="logo">
+<div class="login-box">
+  <img src="assets/img/icono.png" class="avatar" alt="Avatar Image">
+  <form class="centrado">
+    <h1>Login </h1>
+  </form>
 
 
+  <form [formGroup]="loginForm" (ngSubmit="submit(loginForm.value)" )>
+    <div class="form-container">
+      <label for="">Correo</label>
+      <input type="email" required placeholder="Ejemplo@gmail.com"
+        pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" formControlName="nombre">
 
- 
- 
- 
-    
+      <span class="icon-left"><i class="zmdi zmdi-check"></i></span>
+      <span class="msj"></span>
+    </div>
+
+    <div class="form-container">
+      <label for="">Password</label>
+      <input type="text" required placeholder="Password" pattern="[a-zA-Z0-9-]{1,15}" formControlName="Password">
+      <span class="icon-left"><i class="zmdi zmdi-check"></i></span>
+      <span class="msj"></span>
+    </div>
 
 
+    <form>
+      <input type="submit" value="Entrar" id="boton">
+    </form>
 
-  
-  
-  
-    
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+  </form>

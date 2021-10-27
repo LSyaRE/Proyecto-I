@@ -21,7 +21,7 @@ import { ComponentsComponent } from './components.component';
 import {HttpClientModule }from '@angular/common/http';
 import { BienvenidaComponent } from './bienvenida/bienvenida.component';
 import { FiltroService } from '../services/Minventario/filtro/filtro.service';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PostsComponent } from './posts/posts.component';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -57,6 +57,7 @@ import { BrowserModule } from '@angular/platform-browser';
     ComponentsRoutingModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule
     
     
   ],

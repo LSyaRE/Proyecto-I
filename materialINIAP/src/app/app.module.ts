@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { ComponentsRoutingModule } from './components/components-routing.module';
 import { ComponentsModule } from './components/components.module';
 import { PagesModule } from './pages/pages.module';
-import {FormsModule }from '@angular/forms';
+import {FormsModule, ReactiveFormsModule }from '@angular/forms';
 import { FilterPipe } from './filter.pipe';
 
 
@@ -30,6 +30,7 @@ import { FilterPipe } from './filter.pipe';
     ComponentsRoutingModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     ComponentsModule,
     PagesModule,
   

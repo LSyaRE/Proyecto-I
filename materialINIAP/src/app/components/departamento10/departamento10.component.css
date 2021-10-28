@@ -1,17 +1,17 @@
 table {
-    width: 100%;
-    margin-top: 20px;
-  }
+  width: 100%;
+  margin-top: 20px;
+}
 
 .th{
-    width: 20px;
+  width: 20px;
 }
 
 .pointer{
-    cursor: pointer;
+  cursor: pointer;
 }
 
-  .mat-form-field {
-    font-size: 14px;
-    width: 100%;
-  }
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}

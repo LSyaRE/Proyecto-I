@@ -14,7 +14,9 @@ export class Departamento9Component implements OnInit {
   listUsuarios: Usuario[] = [
     {Responsable: "jperez", Equipo: 'juan', Marca :"Perez", Modelo: 'Masculino', Serie:"hbhbn", Mac_Address_Alambrica:"vd", Mac_Inalambrica_Alambrica:"sdvsd",Ip_Alambrica:"dsad", Ip_Inalambrica:"svsd",  Ordinal:"vsdv", Instalacion:"sdfsd", Estado:"ndfsdnf" },
     {Responsable: "carla", Equipo: 'juan', Marca :"Perez", Modelo: 'Masculino', Serie:"hbhbn", Mac_Address_Alambrica:"vd", Mac_Inalambrica_Alambrica:"sdvsd",Ip_Alambrica:"dsad", Ip_Inalambrica:"svsd",  Ordinal:"vsdv", Instalacion:"sdfsd", Estado:"ndfsdnf" }, 
-    {Responsable: "jperez", Equipo: 'juan', Marca :"Perez", Modelo: 'Masculino', Serie:"hbhbn", Mac_Address_Alambrica:"vd", Mac_Inalambrica_Alambrica:"sdvsd",Ip_Alambrica:"dsad", Ip_Inalambrica:"svsd",  Ordinal:"vsdv", Instalacion:"sdfsd", Estado:"ndfsdnf" }, 
+
+    {Responsable: "jperez", Equipo: 'juan', Marca :"Perez", Modelo: 'Masculino', Serie:"hbhbn", Mac_Address_Alambrica:"vd", Mac_Inalambrica_Alambrica:"sdvsd",Ip_Alambrica:"dsad", Ip_Inalambrica:"svsd",  Ordinal:"vsdv",Instalacion:"sdfsd", Estado:"ndfsdnf" }, 
+
     {Responsable: "carla", Equipo: 'juan', Marca :"Perez", Modelo: 'Masculino', Serie:"hbhbn", Mac_Address_Alambrica:"vd", Mac_Inalambrica_Alambrica:"sdvsd",Ip_Alambrica:"dsad", Ip_Inalambrica:"svsd",  Ordinal:"vsdv", Instalacion:"sdfsd", Estado:"ndfsdnf" },  
     {Responsable: "jperez", Equipo: 'juan', Marca :"Perez", Modelo: 'Masculino', Serie:"hbhbn", Mac_Address_Alambrica:"vd", Mac_Inalambrica_Alambrica:"sdvsd",Ip_Alambrica:"dsad", Ip_Inalambrica:"svsd",  Ordinal:"vsdv", Instalacion:"sdfsd", Estado:"ndfsdnf" }, 
     {Responsable: "carla", Equipo: 'juan', Marca :"Perez", Modelo: 'Masculino', Serie:"hbhbn", Mac_Address_Alambrica:"vd", Mac_Inalambrica_Alambrica:"sdvsd",Ip_Alambrica:"dsad", Ip_Inalambrica:"svsd",  Ordinal:"vsdv", Instalacion:"sdfsd", Estado:"ndfsdnf" },  
@@ -37,3 +39,4 @@ export class Departamento9Component implements OnInit {
   }
 
 }
+

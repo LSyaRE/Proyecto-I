@@ -4,6 +4,7 @@ import { Registro } from './registro';
 import{FormGroup,FormControl,Validators} from '@angular/forms';
 import { CrudService } from 'src/app/services/crud/crud.service';
 import { Usuario } from 'src/app/interface/usuarios/usuario';
+import { Login } from 'src/app/interface/login/login';
 
 
 @Component({
@@ -36,10 +37,16 @@ export class LoginComponent implements OnInit {
   
   
     }
-    submit(form:Usuario){
-      this.crudService.getUsuarios().subscribe(data => {
-        console.log(data);
-      });
+    submit(form:Login){
+      console.log(form)
+      if (form.nombre=='admin@iniap.gob.ec' && form.password=='12345' ){
+        this.router.navigate(['/home'])
+
+      }
+      else{
+        console.log('no se ha podido ingresar a la base de inventario')
+      }
+      
     }
 
  

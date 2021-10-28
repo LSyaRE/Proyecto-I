@@ -10,6 +10,6 @@ export interface Usuario {
     Ip_Alambrica:string
     Ip_Inalambrica:string
     Ordinal:string
-    Año:string
+    Instalacion:string
     Estado:string
 }

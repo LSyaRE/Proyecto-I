@@ -15,7 +15,7 @@ const router = Router();
 router.get('/',async (req,res)=>{
 
     try {
-        const sql = 'select * from personas';
+        const sql = 'select * from users';
         const data = await db.query(sql,(err,rows,fiedls)=>{
 
             if (err) throw err;
@@ -35,7 +35,7 @@ router.get('/:id',async (req,res)=>{
 
     try {
         const {id} = req.params;
-        let sql = 'select * from personas where id_user= $1';
+        let sql = 'select * from users where id_user= $1';
         const data = await db.query(sql,[id],(err,rows,fiedls)=>{
 
             if (err) throw err;
@@ -84,8 +84,8 @@ router.put('/:id', async (req,res)=>{
         const {id} = req.params;
         const {nom,pass}= req.body;
         let sql = `update users set 
-                                    nombre=$2,
-                                    password_user=$3 
+                                    nombre=${nom},
+                                    password_user=${pass} 
                                     where id_user= $1`;
         const data = await db.query(sql,[id,nom,pass],(err,rows,fiedls)=>{
 

@@ -22,7 +22,6 @@ import {HttpClientModule }from '@angular/common/http';
 import { BienvenidaComponent } from './bienvenida/bienvenida.component';
 import { FiltroService } from '../services/Minventario/filtro/filtro.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { PostsComponent } from './posts/posts.component';
 import { BrowserModule } from '@angular/platform-browser';
 /*Angular material*/
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -32,6 +31,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import {MatIconModule } from '@angular/material/icon';
 import {MatTooltipModule} from '@angular/material/tooltip';
+
+
 
 @NgModule({
   declarations: [
@@ -53,7 +54,6 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     NavegacionComponent,
     ComponentsComponent,
     BienvenidaComponent,
-    PostsComponent
 
     
   ],  

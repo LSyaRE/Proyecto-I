@@ -1,99 +1,61 @@
-<div class="container">
-  <span>Usuarios</span>
 
-  <mat-form-field appearance="standard">
-      <mat-label>Filter</mat-label>
-      <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input autocomplete="off">
-    </mat-form-field>
+ <h1>DEPA 10</h1>
+<mat-form-field appearance="standard">
+  <mat-label>Filter</mat-label>
+  <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
+</mat-form-field>
 
-    <button class="btn btn-primary" type="button" >Agregar</button>
 
-    <div class="main-container">
+<button class="btn btn-primary" type="button" >Agregar</button>
+
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <br>
+        
+        
+        <!-- Position Column -->
+        <!-- usuario -->
+        <ng-container matColumnDef="usuario">
+          <th mat-header-cell *matHeaderCellDef> Usuario</th>
+          <td mat-cell *matCellDef="let element"> {{element.usuario}} </td>
+        </ng-container>
+      
+        <!-- Name Column -->
+        <!-- nombre -->
+        <ng-container matColumnDef="nombre">
+          <th mat-header-cell *matHeaderCellDef> Nombre </th>
+          <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
+        </ng-container>
+      
+        <!-- Weight Column -->
+        <!-- apellido -->
+        <ng-container matColumnDef="apellido">
+          <th mat-header-cell *matHeaderCellDef> Apellido </th>
+          <td mat-cell *matCellDef="let element"> {{element.apellido}} </td>
+        </ng-container>
+      
+        <!-- Symbol Column -->
+        <!-- sexo -->
+        <ng-container matColumnDef="sexo">
+          <th mat-header-cell *matHeaderCellDef> Sexo </th>
+          <td mat-cell *matCellDef="let element"> {{element.sexo}} </td>
+        </ng-container>
   
-
-  <!-- usuario -->
-  <ng-container matColumnDef="Responsable">
-    <th mat-header-cell *matHeaderCellDef> Responsable</th>
-    <td mat-cell *matCellDef="let element"> {{element.Responsable}} </td>
-  </ng-container>
-
-  <!-- nombre -->
-  <ng-container matColumnDef="Equipo">
-    <th mat-header-cell *matHeaderCellDef> Equipo </th>
-    <td mat-cell *matCellDef="let element"> {{element.Equipo}} </td>
-  </ng-container>
-
-  <!-- apellido -->
-  <ng-container matColumnDef="Marca">
-    <th mat-header-cell *matHeaderCellDef> Marca </th>
-    <td mat-cell *matCellDef="let element"> {{element.Marca}} </td>
-  </ng-container>
-
-  <!-- sexo -->
-  <ng-container matColumnDef="Modelo">
-    <th mat-header-cell *matHeaderCellDef> Modelo </th>
-    <td mat-cell *matCellDef="let element"> {{element.Modelo}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef="Serie">
-    <th mat-header-cell *matHeaderCellDef> Modelo </th>
-    <td mat-cell *matCellDef="let element"> {{element.Modelo}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef="Mac_Address_Alambrica">
-    <th mat-header-cell *matHeaderCellDef> MAC ADDRESS ALÁMBRICA </th>
-    <td mat-cell *matCellDef="let element"> {{element.Mac_Address_Alambrica}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef="Mac_Inalambrica_Alambrica">
-    <th mat-header-cell *matHeaderCellDef> MAC ADDRESS INALÁMBRICA </th>
-    <td mat-cell *matCellDef="let element"> {{element.Mac_Inalambrica_Alambrica}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef="Ip_Alambrica">
-    <th mat-header-cell *matHeaderCellDef> Ip Alambrica </th>
-    <td mat-cell *matCellDef="let element"> {{element.Ip_Alambrica}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef=" Ip_Inalambrica">
-    <th mat-header-cell *matHeaderCellDef>  Ip Inalambrica </th>
-    <td mat-cell *matCellDef="let element"> {{element.Ip_Inalambrica}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef="Ordinal">
-    <th mat-header-cell *matHeaderCellDef> Ordinal </th>
-    <td mat-cell *matCellDef="let element"> {{element.Ordinal}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef="Instalacion">
-    <th mat-header-cell *matHeaderCellDef> Instalacion</th>
-    <td mat-cell *matCellDef="let element"> {{element.Instalacion}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef=" Estado">
-    <th mat-header-cell *matHeaderCellDef>  Estado </th>
-    <td mat-cell *matCellDef="let element"> {{element. Estado}} </td>
-  </ng-container>
-
-  <!-- Aqui estan los iconos de eliminar y editar -->
-      <ng-container matColumnDef="acciones">
-      <th mat-header-cell *matHeaderCellDef>  </th>
-      <td mat-cell *matCellDef="let element" style="text-align: right;"> 
-          <a class="pointer" style="color:rgb(4, 5, 83) ;" matTooltip="Editar Usuario">
-              <mat-icon>edit</mat-icon>
-          </a> 
-          <a class="pointer" style="color:rgb(153, 4, 4) ;" matTooltip="Eliminar Usuario">
-              <mat-icon>delete</mat-icon>
-          </a> 
-      </td>
+        <!-- Aqui estan los iconos de eliminar y editar -->
+            <ng-container matColumnDef="acciones">
+            <th mat-header-cell *matHeaderCellDef>  </th>
+            <td mat-cell *matCellDef="let element" style="text-align: right;"> 
+                <a class="pointer" style="color:rgb(4, 5, 83) ;" matTooltip="Editar Usuario">
+                    <mat-icon>edit</mat-icon>
+                </a> 
+                <a class="pointer" style="color:rgb(153, 4, 4) ;" matTooltip="Eliminar Usuario">
+                    <mat-icon>delete</mat-icon>
+                </a> 
+            </td>
+        
+          </ng-container>
+      
   
-    </ng-container>
-
-
-  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
- 
-</table>
-</div>
-</div>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+  

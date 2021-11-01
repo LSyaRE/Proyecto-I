@@ -53,21 +53,17 @@ router.get('/:id',async (req,res)=>{
 router.post('/', async (req,res)=>{
 
     try {
-        
-        const {id,nom,pass}= req.body;
-        if (id!=null && nom!=null && pass!=null){
-            let sql = `insert into users values ($1,$2,$3)`;
-            const data = await db.query(sql,[id,nom,pass],(err,rows,fiedls)=>{
+        console.log(req.body)
+        const {id_user,nombre,password_user}= req.body;
+            let sql = `insert into users values (${id_user},'${nombre}','${password_user}')`;
+            const data = await db.query(sql,(err,rows,fiedls)=>{
     
                 if (err) throw err;
                 else{
                     res.json({status:'equipo agregado'})
                 }
             });
-        }
-        else{
-            console.log('Los valores no deben ser nulos')
-        };
+
     
 
 

@@ -57,7 +57,7 @@ CREATE Table conexion(
 
 
 CREATE Table asignacion(
-    id_asignacion INTEGER AUTO_INCREMENT,
+    id_asignacion INTEGER NOT NULL,
     cedula_personas VARCHAR(15) NOT NULL,
     id_departamentos INTEGER NOT NULL,
     id_equipos INTEGER NOT NULL,

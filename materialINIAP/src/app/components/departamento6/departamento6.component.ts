@@ -12,16 +12,14 @@ import { Usuario } from 'src/app/interface/usuarios/usuario';
 export class Departamento6Component implements OnInit {
 
   listUsuarios: Usuario[] = [
-    {usuario: "jperez", nombre: 'juan', apellido:"Perez", sexo: 'Masculino'},
-    {usuario: "gmaria", nombre: 'lola', apellido:"lopez", sexo: 'Femenino'},
-    {usuario: "pepito", nombre: 'juanita', apellido:"Peran", sexo: 'Masculino'},
-    {usuario: "carlo", nombre: 'rome', apellido:"Parra", sexo: 'Femenino'},
-    {usuario: "andrea", nombre: 'ricardo', apellido:"zapata", sexo: 'Masculino'},
-    {usuario: "pedro", nombre: 'carlos', apellido:"garcia", sexo: 'Femeninos'},
+    {responsable: "jperez", equipo: 'juan', marca:"Perez", modelo: 'Masculino', serie:'uwu' , mac_alambrica:'54jd', mac_inalambrica:'xc5', ip_alambrica:'1ss2',},
+    {responsable: "gmaria", equipo: 'lola', marca:"lopez", modelo: 'Femenino' ,serie:'uwu' , mac_alambrica:'54jd', mac_inalambrica:'xc5', ip_alambrica:'1ss2',},
+    {responsable: "pepito", equipo: 'juanita', marca:"Peran", modelo: 'Masculino', serie:'uwu', mac_alambrica:'54jd', mac_inalambrica:'xc5',ip_alambrica:'1ss2', }
+    
     
   ];
 
-  displayedColumns: string[] = ['usuario', 'nombre', 'apellido', 'sexo','acciones'];
+  displayedColumns: string[] = ['responsable', 'equipo', 'marca', 'modelo', 'serie',  'mac_alambrica', 'mac_inalambrica', 'ip_alambrica', 'acciones'];
   dataSource = new MatTableDataSource(this.listUsuarios);
   constructor() { }
 

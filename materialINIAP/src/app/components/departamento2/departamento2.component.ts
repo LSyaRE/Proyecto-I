@@ -12,9 +12,7 @@ import { Usuario } from 'src/app/interface/usuarios/usuario';
 export class Departamento2Component implements OnInit {
 
   listUsuarios: Usuario[] = [
-    {responsable: "jperez", equipo: 'juan', marca:"Perez", modelo: 'Masculino', serie:'uwu' , mac_alambrica:'54jd', mac_inalambrica:'xc5', ip_alambrica:'1ss2',ip_inalambrica:'45sd', ordinal:'5424', compra:'dsd',estado:'dsdfsdf',observaciones:'hola'},
-    {responsable: "gmaria", equipo: 'lola', marca:"lopez", modelo: 'Femenino' ,serie:'uwu' , mac_alambrica:'54jd', mac_inalambrica:'xc5', ip_alambrica:'1ss2',ip_inalambrica:'45sd', ordinal:'5424', compra:'dsd',estado:'dnjbbn',observaciones:'hola'},
-    {responsable: "pepito", equipo: 'juanita', marca:"Peran", modelo: 'Masculino', serie:'uwu', mac_alambrica:'54jd', mac_inalambrica:'xc5',ip_alambrica:'1ss2', ip_inalambrica:'45sd', ordinal:'5424',compra:'dsd',estado:'dsdfdf',observaciones:'hola' }
+   
     
   ];
 

@@ -7,4 +7,9 @@ export interface Usuario{
     mac_alambrica:string,
     mac_inalambrica:string,
     ip_alambrica:string,
+    ip_inalambrica:string,
+    ordinal:string,
+    compra:string,
+    estado:string,
+    observaciones:string,
 }

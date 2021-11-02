@@ -64,6 +64,36 @@
         </ng-container>
 
 
+        <ng-container matColumnDef="ip_inalambrica">
+          <th mat-header-cell *matHeaderCellDef> Ip Inalambrica</th>
+          <td mat-cell *matCellDef="let element"> {{element.ip_inalambrica}} </td>
+        </ng-container>
+
+
+        <ng-container matColumnDef="ordinal">
+          <th mat-header-cell *matHeaderCellDef> Ordinal</th>
+          <td mat-cell *matCellDef="let element"> {{element.ordinal}} </td>
+        </ng-container>
+
+
+        <ng-container matColumnDef="compra">
+          <th mat-header-cell *matHeaderCellDef> Compra del Equipo</th>
+          <td mat-cell *matCellDef="let element"> {{element.compra}} </td>
+        </ng-container>
+
+
+        <ng-container matColumnDef="estado">
+          <th mat-header-cell *matHeaderCellDef> Estado  del Equipo</th>
+          <td mat-cell *matCellDef="let element"> {{element.estado}} </td>
+        </ng-container>
+
+
+        <ng-container matColumnDef="observaciones">
+          <th mat-header-cell *matHeaderCellDef> Observaciones</th>
+          <td mat-cell *matCellDef="let element"> {{element.observaciones}} </td>
+        </ng-container>
+
+
         <!-- Aqui estan los iconos de eliminar y editar -->
             <ng-container matColumnDef="acciones">
             <th mat-header-cell *matHeaderCellDef>  </th>

@@ -31,6 +31,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import {MatIconModule } from '@angular/material/icon';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { FormularioComponent } from './formulario/formulario.component';
+import { AgregarComponent } from './agregar/agregar.component';
 
 
 
@@ -54,6 +56,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     NavegacionComponent,
     ComponentsComponent,
     BienvenidaComponent,
+    FormularioComponent,
+    AgregarComponent,
 
     
   ],  

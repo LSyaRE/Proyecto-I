@@ -15,7 +15,7 @@ export class Departamento10Component implements OnInit {
     
   ];
 
-  displayedColumns: string[] = ['responsable', 'equipo', 'marca', 'modelo', 'serie', 'mac_alambrica', 'mac_inalambrica', 'ip_alambrica', 'ip_inalambrica', 'ordinal', 'compra','estado', 'observaciones', 'acciones'];
+  displayedColumns: string[] = ['responsable',  'marca', 'modelo', 'serie', 'mac_alambrica', 'mac_inalambrica', 'ip_alambrica', 'ip_inalambrica', 'ordinal', 'compra','estado', 'observaciones', 'acciones'];
   dataSource = new MatTableDataSource(this.listUsuarios);
   constructor() { }
 

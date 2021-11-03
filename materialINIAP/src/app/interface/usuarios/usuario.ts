@@ -1,6 +1,5 @@
 export interface Usuario{
     responsable:string,
-    equipo:string,
     marca:string,
     modelo:string,
     serie:string,

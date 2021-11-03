@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { InventarioResolver } from '../services/Minventario/inventario.resolver';
+import { AgregarComponent } from './agregar/agregar.component';
 import { BienvenidaComponent } from './bienvenida/bienvenida.component';
 import { ComponentsComponent } from './components.component';
 import { Departamento1Component } from './departamento1/departamento1.component';
@@ -16,6 +17,7 @@ import { Departamento8Component } from './departamento8/departamento8.component'
 import { Departamento9Component } from './departamento9/departamento9.component';
 import { EliminadosComponent } from './eliminados/eliminados.component';
 import { EstablesComponent } from './estables/estables.component';
+import { FormularioComponent } from './formulario/formulario.component';
 import { MantenimientoComponent } from './mantenimiento/mantenimiento.component';
 
 
@@ -39,6 +41,8 @@ const routes: Routes = [
       {path:'malos',component:EliminadosComponent},
       {path:'buenos',component:EstablesComponent},
       {path:'regulares',component:MantenimientoComponent},
+      {path:'agregar_personas',component:FormularioComponent},
+      {path:'agregar',component:AgregarComponent},
       {path:'',redirectTo:'/home/inicio',pathMatch:'full'},
       {path:'**',redirectTo:'/home/inicio',pathMatch:'full'}
     ]}

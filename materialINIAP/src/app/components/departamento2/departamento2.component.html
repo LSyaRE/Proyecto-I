@@ -5,7 +5,7 @@
 </mat-form-field>
 
 
-<button class="btn btn-primary" type="button" >Agregar</button>
+<button class="btn btn-primary" type="button" routerLink="/home/agregar">Agregar</button>
 
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
   <br>
@@ -18,12 +18,7 @@
           <td mat-cell *matCellDef="let element"> {{element.responsable}} </td>
         </ng-container>
       
-        <!-- Name Column -->
-        <!-- nombre -->
-        <ng-container matColumnDef="equipo">
-          <th mat-header-cell *matHeaderCellDef> Nombre del equipo </th>
-          <td mat-cell *matCellDef="let element"> {{element.equipo}} </td>
-        </ng-container>
+        
       
         <!-- Weight Column -->
         <!-- apellido -->

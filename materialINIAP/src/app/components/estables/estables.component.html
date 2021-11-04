@@ -1,1 +1,105 @@
-<p>estables works!</p>
+<h1>Estables</h1>
+<mat-form-field appearance="standard">
+  <mat-label>Filter</mat-label>
+  <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
+</mat-form-field>
+
+
+<button class="btn btn-primary" type="button" routerLink="/home/agregar" >Agregar</button>
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <br>
+        
+        
+        <!-- Position Column -->
+        <!-- usuario -->
+        <ng-container matColumnDef="nombres_personas">
+          <th mat-header-cell *matHeaderCellDef> Responsable</th>
+          <td mat-cell *matCellDef="let element"> {{element.nombres_personas}} </td>
+        </ng-container>
+      
+      
+        <!-- Weight Column -->
+        <!-- apellido -->
+        <ng-container matColumnDef="marca_equipos">
+          <th mat-header-cell *matHeaderCellDef> Marca </th>
+          <td mat-cell *matCellDef="let element"> {{element.marca_equipos}} </td>
+        </ng-container>
+      
+        <!-- Symbol Column -->
+        <!-- sexo -->
+        <ng-container matColumnDef="modelo_equipos">
+          <th mat-header-cell *matHeaderCellDef> Modelo </th>
+          <td mat-cell *matCellDef="let element"> {{element.modelo_equipos}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="num_serie_equipos">
+          <th mat-header-cell *matHeaderCellDef> Serie </th>
+          <td mat-cell *matCellDef="let element"> {{element.num_serie_equipos}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="lan_mac">
+          <th mat-header-cell *matHeaderCellDef> Mac Address Alambrica </th>
+          <td mat-cell *matCellDef="let element"> {{element.lan_mac}} </td>
+        </ng-container>
+  
+
+        <ng-container matColumnDef="wifi_mac">
+          <th mat-header-cell *matHeaderCellDef> Mac Address Inalambrica </th>
+          <td mat-cell *matCellDef="let element"> {{element.wifi_mac }} </td>
+        </ng-container>
+
+
+        <ng-container matColumnDef="lan_ip">
+          <th mat-header-cell *matHeaderCellDef> IP Alambrica </th>
+          <td mat-cell *matCellDef="let element"> {{element.lan_ip}} </td>
+        </ng-container>
+
+
+        <ng-container matColumnDef="wifi_ip">
+          <th mat-header-cell *matHeaderCellDef> Ip Inalambrica</th>
+          <td mat-cell *matCellDef="let element"> {{element.wifi_ip}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="ordinal_equipos">
+          <th mat-header-cell *matHeaderCellDef> Ordinal</th>
+          <td mat-cell *matCellDef="let element"> {{element.ordinal_equipos}} </td>
+        </ng-container>
+
+
+        <ng-container matColumnDef="buy_age_equipos">
+          <th mat-header-cell *matHeaderCellDef> Compra del Equipo</th>
+          <td mat-cell *matCellDef="let element"> {{element.buy_age_equipos}} </td>
+        </ng-container>
+
+
+        <ng-container matColumnDef="nom_estado">
+          <th mat-header-cell *matHeaderCellDef> Estado  del Equipo</th>
+          <td mat-cell *matCellDef="let element"> {{element.nom_estado}} </td>
+        </ng-container>
+
+
+        <ng-container matColumnDef="observacion_equipos">
+          <th mat-header-cell *matHeaderCellDef> Observaciones</th>
+          <td mat-cell *matCellDef="let element"> {{element.observacion_equipos}} </td>
+        </ng-container>
+
+        <!-- Aqui estan los iconos de eliminar y editar -->
+            <ng-container matColumnDef="acciones">
+            <th mat-header-cell *matHeaderCellDef>  </th>
+            <td mat-cell *matCellDef="let element" style="text-align: right;"> 
+                <a class="pointer" style="color:rgb(4, 5, 83) ;" matTooltip="Editar Usuario">
+                    <mat-icon>edit</mat-icon>
+                </a> 
+                <a class="pointer" style="color:rgb(153, 4, 4) ;" matTooltip="Eliminar Usuario">
+                    <mat-icon>delete</mat-icon>
+                </a> 
+            </td>
+        
+          </ng-container>
+      
+  
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+  

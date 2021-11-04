@@ -19,7 +19,7 @@ app.set('json spaces',2);
 
 //routes 
 app.use('/api/inicio',require('./routes/index'));
-app.use('/api/movies',require('./routes/movies'));
+
 
 
 

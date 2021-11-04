@@ -3,8 +3,7 @@ CREATE database iniap;
 
 CREATE Table personas (
     cedula_personas VARCHAR(15) NOT NULL,
-    nombre_personas VARCHAR(50) NOT NULL,
-    apellido_personas VARCHAR(50) NOT NULL,
+    nombres_personas VARCHAR(50) NOT NULL,
     pass_personas VARCHAR(30),
     PRIMARY KEY(cedula_personas)
 );
@@ -27,6 +26,23 @@ CREATE Table tipo (
     PRIMARY KEY (id_tipo)
 );
 
+CREATE Table ip (
+    id_ip INTEGER NOT NULL,
+    wifi_ip VARCHAR(20) NOT NULL,
+    lan_ip VARCHAR(20) NOT NULL,
+    PRIMARY KEY (id_ip)
+);
+
+CREATE Table mac (
+    id_mac INTEGER NOT NULL,
+    wifi_mac VARCHAR(20) NOT NULL,
+    lan_mac VARCHAR(20) NOT NULL,
+    PRIMARY KEY (id_mac)
+);
+
+
+
+
 
 CREATE Table equipos (
     id_equipos INTEGER NOT NULL,
@@ -47,11 +63,12 @@ CREATE Table equipos (
 CREATE Table conexion(
     id_conexion INTEGER NOT NULL,
     id_equipos INTEGER NOT NULL,
-    tipo_conexion VARCHAR(10) NOT NULL,
-    ip_conexion VARCHAR(20),
-    mac_addres_conexion VARCHAR(20),
+    id_ip INTEGER,
+    id_mac INTEGER,
     PRIMARY KEY(id_conexion),
-    FOREIGN KEY(id_equipos) REFERENCES equipos(id_equipos)
+    FOREIGN KEY(id_equipos) REFERENCES equipos(id_equipos),
+    FOREIGN KEY(id_ip) REFERENCES ip(id_ip),
+    FOREIGN KEY(id_mac) REFERENCES mac(id_mac)
 
 );
 

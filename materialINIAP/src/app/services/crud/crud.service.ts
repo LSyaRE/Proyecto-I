@@ -19,32 +19,32 @@ export class CrudService {
 
 
 //get usuarios:obtiene todos los usuarios
-getUsuarios()
+getEquipos()
 {
   return this.http.get(this.url);
 }; 
 
 
 //get un usuario: obtiene solo un usuario
-getUnUsuarios(id:string)
+getunEquipos(id:string)
 {
   return this.http.get(this.url+'/'+id);
 };
 
-//Agregar usuario
-addUsuario(usuario:Persona){
+//Agregar al Equipo
+addEquipo(usuario:Persona){
   
   return this.http.post(this.url,usuario);
 
 };
 
-//Eliminar usuario
+//Eliminar Equipo
 deleteUsuario(id:'string'){
   return this.http.delete(this.url+'/'+id);
 }
 
 
-//Modificar usuario
+//Modificar equipo
 modifyUsuario(id:string, usuario:Persona){
   return this.http.put(this.url+'/'+id,usuario);
 }

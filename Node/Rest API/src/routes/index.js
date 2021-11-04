@@ -37,12 +37,19 @@ router.get('/',async (req,res)=>{
     }    
     });
 
-//Muestra a un usuario
+//Muestra a los equipos delimitados
 router.get('/:id',async (req,res)=>{
 
     try {
         const {id} = req.params;
-        let sql = 'select * from users where id_user= $1';
+        let sql = `select per.nombres_personas,eq.*,i.wifi_ip,i.lan_ip,ma.wifi_mac,ma.lan_mac
+        from equipos as eq 
+        inner join asignacion as asi on eq.id_equipos=asi.id_asignacion 
+        inner join personas as per on asi.cedula_personas=per.cedula_personas
+        inner join conexion as con on con.id_equipos=eq.id_equipos
+        inner join ip as i on con.id_ip=i.id_ip
+        inner join mac as ma on con.id_mac=ma.id_mac 
+        where asi.id_departamentos=$1`;
         const data = await db.query(sql,[id],(err,rows,fiedls)=>{
 
             if (err) throw err;

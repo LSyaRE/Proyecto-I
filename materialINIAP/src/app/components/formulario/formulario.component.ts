@@ -9,7 +9,7 @@ import { CrudService } from 'src/app/services/crud/crud.service';
   styleUrls: ['./formulario.component.css']
 })
 export class FormularioComponent implements OnInit {
-
+  listado:Persona[] = [];
   usuario:Persona={
     cedula_personas:'',
     nombres_personas:'',
@@ -19,12 +19,26 @@ export class FormularioComponent implements OnInit {
   constructor(private crudService: CrudService, private router: Router) { }
 
   ngOnInit(): void {
+    this.listarPersona()
   }
   delay(n: any) {
     return new Promise(function (resolve) {
       setTimeout(resolve, n * 1000);
     });
   }
+
+  listarPersona()
+{
+  this.crudService.getPersonas().subscribe(
+    res=> {
+      
+      console.log(res)
+      this.listado=<any>res; 
+      
+    },
+    err=> console.log(err)
+  );
+};
 
   async agregarPersona() {
 

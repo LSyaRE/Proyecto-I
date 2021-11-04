@@ -59,15 +59,15 @@
     <thead>
       <tr>
         <th scope="col">#</th>
-        <th scope="col">Usuario</th>
         <th scope="col">Cedula</th>
+        <th scope="col">Usuario</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
+      <tr *ngFor="let usuario of listado">
+        <th>1</th>
+        <td>{{usuario.cedula_personas}}</td>
+        <td>{{usuario.nombres_personas}}</td>
       </tr>
       
      

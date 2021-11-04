@@ -81,8 +81,8 @@ router.put('/:id', async (req,res)=>{
         const {cedula_personas} = req.params;
         const {pass_personas}= req.body;
         let sql = `update personas set 
-                                    pass_personas=${pass_personas}
-                                    where cedula_personas= ${cedula_personas}`;
+                                    pass_personas= '${pass_personas}' 
+                                    where cedula_personas= '${cedula_personas}'`;
         const data = await db.query(sql,(err,rows,fiedls)=>{
 
             if (err) throw err.error;

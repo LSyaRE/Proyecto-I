@@ -1,5 +1,5 @@
 export interface Persona {
-    cedula_personas?:string;
-    nombre_personas?:string;
-    contraseña_personas:string;
+    cedula_personas:string;
+    nombres_personas?:string;
+    pass_personas?:string;
 }

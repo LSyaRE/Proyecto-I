@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Persona } from 'src/app/interface/personas/persona';
 import { CrudService } from 'src/app/services/crud/crud.service';
 
 @Component({
@@ -8,6 +9,12 @@ import { CrudService } from 'src/app/services/crud/crud.service';
   styleUrls: ['./formulario.component.css']
 })
 export class FormularioComponent implements OnInit {
+
+  usuario:Persona={
+    cedula_personas:'',
+    nombres_personas:'',
+    pass_personas:''
+  };
 
   constructor(private crudService: CrudService, private router: Router) { }
 
@@ -19,19 +26,20 @@ export class FormularioComponent implements OnInit {
     });
   }
 
-  // async agregarUsuario() {
+  async agregarPersona() {
 
-  //   console.log(this.usuario)
-  //   const add = this.crudService.addEquipo(this.usuario).subscribe(
-  //     res => {
-  //       console.log(res)
+    console.log(this.usuario)
+     const add = this.crudService.addPersona(this.usuario).subscribe(
+       res => {
+         console.log(res)
 
-  //     },
-  //     err => console.log(err)
-  //   );
-  //   console.log(add)
-  //   await this.delay(0.5)
-  //   this.router.navigate(['/home'])
+       },
+       err => console.log(err)
+     );
+     console.log(add)
+     await this.delay(0.5)
+     this.router.navigate(['/home/inicio'])
+     
 
-  // }
+   }
 }

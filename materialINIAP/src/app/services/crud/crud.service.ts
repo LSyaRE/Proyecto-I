@@ -9,7 +9,7 @@ import { Persona } from 'src/app/interface/personas/persona';
 export class CrudService {
 
   //En la url se coloca donde esta ubicado el REST API
-  url= 'http://localhost:3000/api/inicio';
+  url= 'http://localhost:3000/api';
   
   //Dentro del constructor se instancio el servicio de http
   constructor(
@@ -18,23 +18,40 @@ export class CrudService {
               ) { }
 
 
-//get usuarios:obtiene todos los usuarios
+//get Equipos:obtiene todos Equipos
 getEquipos()
 {
-  return this.http.get(this.url);
+  return this.http.get(this.url+'/inicio');
 }; 
 
 
-//get un usuario: obtiene solo un usuario
+
+
+
+//get un Equipo: obtiene solo Equipo
 getunEquipos(id:string)
 {
-  return this.http.get(this.url+'/'+id);
+  return this.http.get(this.url+'/inicio'+'/'+id);
 };
+
+//obtiene todas las personas
+getPersonas()
+{
+  return this.http.get(this.url+'/personas');
+}; 
+
 
 //Agregar al Equipo
 addEquipo(usuario:Persona){
   
-  return this.http.post(this.url,usuario);
+  return this.http.post(this.url +'/inicio',usuario);
+
+};
+
+//Agregar a la persona
+addPersona(usuario:Persona){
+  
+  return this.http.post(this.url +'/personas',usuario);
 
 };
 

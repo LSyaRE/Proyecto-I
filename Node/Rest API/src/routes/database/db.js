@@ -2,7 +2,7 @@
 const configur ={
     user: 'postgres',
     host:'localhost',
-    password:'123456',
+    password:'Porawiin.1',
     database:'iniap'
 } 
 

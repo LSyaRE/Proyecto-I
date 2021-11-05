@@ -26,6 +26,7 @@ export class AgregarComponent implements OnInit {
     mac_wifi:'',
     mac_lan:'',
     depart:''
+  
   };
 
   constructor(private crudService:CrudService, private router:Router) { }

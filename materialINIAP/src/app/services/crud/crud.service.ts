@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Envio } from 'src/app/interface/bdObtencion/envio';
 import { Persona } from 'src/app/interface/personas/persona';
 
 
@@ -40,9 +41,14 @@ getPersonas()
   return this.http.get(this.url+'/personas');
 }; 
 
+getNewId()
+{
+  return this.http.get(this.url+'/default');
+}; 
+
 
 //Agregar al Equipo
-addEquipo(usuario:Persona){
+addEquipo(usuario:Envio){
   
   return this.http.post(this.url +'/inicio',usuario);
 
@@ -54,6 +60,14 @@ addPersona(usuario:Persona){
   return this.http.post(this.url +'/personas',usuario);
 
 };
+
+addDefault(usuario:Persona){
+  
+  return this.http.post(this.url +'/default',usuario);
+
+};
+
+
 
 //Eliminar Equipo
 deleteUsuario(id:'string'){

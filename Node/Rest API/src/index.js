@@ -20,7 +20,7 @@ app.set('json spaces',2);
 //routes 
 app.use('/api/inicio',require('./routes/index'));
 app.use('/api/personas',require('./routes/personas'));
-
+app.use('/api/default',require('./routes/default'));
 
 
 

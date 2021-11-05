@@ -1,110 +1,40 @@
 <h1>DEPA 4</h1>
 
-
-
 <button class="btn btn-primary" type="button" routerLink="/home/agregar" >Agregar</button>
 
-<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-  <br>
-        
-        
-       <!-- Position Column -->
-        <!-- usuario -->
-        <ng-container matColumnDef="nombres_personas">
-          <th mat-header-cell *matHeaderCellDef> Responsable</th>
-          <td mat-cell *matCellDef="let element"> {{element.nombres_personas}} </td>
-        </ng-container>
-      
-      
-        <ng-container matColumnDef="tipo">
-          <th mat-header-cell *matHeaderCellDef> Tipo de Equipo </th>
-          <td mat-cell *matCellDef="let element"> {{element.tipo}} </td>
-        </ng-container>
-
-
-
-        <!-- Weight Column -->
-        <!-- apellido -->
-        <ng-container matColumnDef="marca_equipos">
-          <th mat-header-cell *matHeaderCellDef> Marca </th>
-          <td mat-cell *matCellDef="let element"> {{element.marca_equipos}} </td>
-        </ng-container>
-      
-        <!-- Symbol Column -->
-        <!-- sexo -->
-        <ng-container matColumnDef="modelo_equipos">
-          <th mat-header-cell *matHeaderCellDef> Modelo </th>
-          <td mat-cell *matCellDef="let element"> {{element.modelo_equipos}} </td>
-        </ng-container>
-
-        <ng-container matColumnDef="num_serie_equipos">
-          <th mat-header-cell *matHeaderCellDef> Serie </th>
-          <td mat-cell *matCellDef="let element"> {{element.num_serie_equipos}} </td>
-        </ng-container>
-
-        <ng-container matColumnDef="lan_mac">
-          <th mat-header-cell *matHeaderCellDef> Mac Address Alambrica </th>
-          <td mat-cell *matCellDef="let element"> {{element.lan_mac}} </td>
-        </ng-container>
-  
-
-        <ng-container matColumnDef="wifi_mac">
-          <th mat-header-cell *matHeaderCellDef> Mac Address Inalambrica </th>
-          <td mat-cell *matCellDef="let element"> {{element.wifi_mac }} </td>
-        </ng-container>
-
-
-        <ng-container matColumnDef="lan_ip">
-          <th mat-header-cell *matHeaderCellDef> IP Alambrica </th>
-          <td mat-cell *matCellDef="let element"> {{element.lan_ip}} </td>
-        </ng-container>
-
-
-        <ng-container matColumnDef="wifi_ip">
-          <th mat-header-cell *matHeaderCellDef> Ip Inalambrica</th>
-          <td mat-cell *matCellDef="let element"> {{element.wifi_ip}} </td>
-        </ng-container>
-
-        <ng-container matColumnDef="ordinal_equipos">
-          <th mat-header-cell *matHeaderCellDef> Ordinal</th>
-          <td mat-cell *matCellDef="let element"> {{element.ordinal_equipos}} </td>
-        </ng-container>
-
-
-        <ng-container matColumnDef="buy_age_equipos">
-          <th mat-header-cell *matHeaderCellDef> Compra del Equipo</th>
-          <td mat-cell *matCellDef="let element"> {{element.buy_age_equipos}} </td>
-        </ng-container>
-
-
-        <ng-container matColumnDef="nom_estado">
-          <th mat-header-cell *matHeaderCellDef> Estado  del Equipo</th>
-          <td mat-cell *matCellDef="let element"> {{element.nom_estado}} </td>
-        </ng-container>
-
-
-        <ng-container matColumnDef="observacion_equipos">
-          <th mat-header-cell *matHeaderCellDef> Observaciones</th>
-          <td mat-cell *matCellDef="let element"> {{element.observacion_equipos}} </td>
-        </ng-container>
-
-
-        <!-- Aqui estan los iconos de eliminar y editar -->
-            <ng-container matColumnDef="acciones">
-            <th mat-header-cell *matHeaderCellDef>  </th>
-            <td mat-cell *matCellDef="let element" style="text-align: right;"> 
-                <a class="pointer" style="color:rgb(4, 5, 83) ;" matTooltip="Editar Usuario">
-                    <mat-icon>edit</mat-icon>
-                </a> 
-                <a class="pointer" style="color:rgb(153, 4, 4) ;" matTooltip="Eliminar Usuario">
-                    <mat-icon>delete</mat-icon>
-                </a> 
-            </td>
-        
-          </ng-container>
-      
-  
-        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-      </table>
-  
+<table class="table table-hover  table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Responsable</th>
+      <th scope="col">Tipo de Equipo </th>
+      <th scope="col">Marca</th>
+      <th scope="col">Modelo</th>
+      <th scope="col">Serie </th>
+      <th scope="col">Mac Address Alambrica</th>
+      <th scope="col">Mac Address Inalambrica</th>
+      <th scope="col">IP Alambrica </th>
+      <th scope="col">Ip Inalambrica</th>
+      <th scope="col">Compra del Equipo</th>
+      <th scope="col">Estado  del Equipo </th>
+      <th scope="col">Observaciones </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let Usuario of listUsuarios">
+      <th scope="row">{{Usuario.nombres_personas}}</th>
+      <td>{{Usuario.marca_equipos}}</td>
+      <td>{{Usuario.modelo_equipos}}</td>
+      <td>{{Usuario.num_serie_equipos}}</td>
+      <td>{{Usuario.lan_mac}}</td>
+      <td>{{Usuario.wifi_mac}}</td>
+      <td>{{Usuario.lan_ip}}</td>
+      <td>{{Usuario.wifi_ip}}</td>
+      <td>{{Usuario.ordinal_equipos}}</td>
+      <td>{{Usuario.buy_age_equipos}}</td>
+      <td>{{Usuario.nom_estado}}</td>
+      <td>{{Usuario.observacion_equipos}}</td>
+      <td>{{Usuario.tipo}}</td>
+    </tr>
+   
+  </tbody>
+</table>

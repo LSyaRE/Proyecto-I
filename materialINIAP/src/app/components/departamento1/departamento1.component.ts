@@ -18,9 +18,6 @@ export class Departamento1Component implements OnInit {
     
     
   ];
-
-  displayedColumns: string[] =['nombres_personas', 'tipo','marca_equipos', 'modelo_equipos', 'num_serie_equipos', 'lan_mac', 'wifi_mac', 'lan_ip', 'wifi_ip', 'ordinal_equipos', 'buy_age_equipos','nom_estado', 'observacion_equipos', 'acciones'];
-  dataSource = new MatTableDataSource(this.listUsuarios); 
   constructor(private crudService:CrudService, private router:Router) { }
 
   ngOnInit(): void {
@@ -58,10 +55,7 @@ export class Departamento1Component implements OnInit {
   };
   
   
-  applyFilter(event: Event) {
-    const filterValue = (event.target as HTMLInputElement).value;
-    this.dataSource.filter = filterValue.trim().toLowerCase();
-  }
+ 
   
   
   

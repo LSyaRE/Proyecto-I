@@ -11,4 +11,5 @@ export interface Usuario{
     buy_age_equipos:string;
     nom_estado:string;
     observacion_equipos:string;
+    tipo:string;
 }

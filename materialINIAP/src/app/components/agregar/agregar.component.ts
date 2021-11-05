@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { CrudService } from 'src/app/services/crud/crud.service';
 
 @Component({
   selector: 'app-agregar',
@@ -7,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AgregarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private crudService:CrudService, private router:Router) { }
 
   ngOnInit(): void {
+    
   }
 
 }

@@ -24,6 +24,7 @@ export class Departamento1Component implements OnInit {
   constructor(private crudService:CrudService, private router:Router) { }
 
   ngOnInit(): void {
+    this.listarEquipo()
   }
 
  
@@ -41,7 +42,8 @@ export class Departamento1Component implements OnInit {
     );
   
   }
-    listarunEquipo()
+    
+  listarunEquipo()
   {
     this.crudService.getunEquipos('0').subscribe(
       res=> {
@@ -56,7 +58,10 @@ export class Departamento1Component implements OnInit {
   };
   
   
-  
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
   
   
   

@@ -75,8 +75,14 @@ router.post('/', async (req,res)=>{
 
     try {
         console.log(req.body)
-        const {id_user,nombre,password_user}= req.body;
-            let sql = `insert into users values (${id_user},'${nombre}','${password_user}')`;
+        const {id_all,numSerie,marca,modelo,ordinal
+            ,buyAge,observacion,ip_wifi,ip_lan,mac_wifi,mac_lan,depart}= req.body;
+            let sql = `insert into equipos values (${id_all},0,0,${numSerie},'${marca}','${modelo}',${ordinal},${buyAge},'${observacion}');
+                        insert into ip values(${id_all},'${ip_wifi}','${ip_lan}');
+                        insert into mac values(${id_all},'${mac_wifi}','${mac_lan}');
+                        insert into conexion values (${id_all},${id_all},${id_all},${id_all});
+                        insert into asignacion values (${id_all},'N/A',${depart},${id_all});
+            `;
             const data = await db.query(sql,(err,rows,fiedls)=>{
     
                 if (err) throw err;

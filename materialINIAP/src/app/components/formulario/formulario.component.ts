@@ -10,6 +10,7 @@ import { CrudService } from 'src/app/services/crud/crud.service';
 })
 export class FormularioComponent implements OnInit {
   listado:Persona[] = [];
+  
   usuario:Persona={
     cedula_personas:'',
     nombres_personas:'',

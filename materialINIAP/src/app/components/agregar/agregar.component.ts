@@ -49,10 +49,31 @@ export class AgregarComponent implements OnInit {
     );
   
   }
+  delay(n: any) {
+    return new Promise(function (resolve) {
+      setTimeout(resolve, n * 1000);
+    });
+  }
 
- 
-  
+  async agregarEquipo() {
 
-  
+    console.log(this.usuario)
+    //  const add = this.crudService.addEquipo(this.usuario).subscribe(
+    //    res => {
+    //      console.log(res)
 
+    //    },
+    //    err => console.log(err)
+    //  );
+    //  console.log(add)
+    await this.delay(0.5)
+    this.router.navigate(['/home/inicio'])
+     
+
+   }
 }
+  
+
+  
+
+

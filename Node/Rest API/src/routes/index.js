@@ -70,7 +70,7 @@ router.get('/:id', async (req, res) => {
     }
 });
 
-//Agregar usuario
+//Agregar 
 
         router.post('/', async (req, res) => {
 

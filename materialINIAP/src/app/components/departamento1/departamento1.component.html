@@ -1,14 +1,12 @@
 <h1>DEPA 1</h1>
-<mat-form-field appearance="standard">
-  <mat-label>Filter</mat-label>
-  <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
-</mat-form-field>
+
 
 
 <button class="btn btn-primary" type="button" routerLink="/home/agregar" >Agregar</button>
 
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
   <br>
+        
         
         
         <!-- Position Column -->
@@ -18,6 +16,12 @@
           <td mat-cell *matCellDef="let element"> {{element.nombres_personas}} </td>
         </ng-container>
       
+
+
+        <ng-container matColumnDef="tipo">
+          <th mat-header-cell *matHeaderCellDef> Tipo de Equipo </th>
+          <td mat-cell *matCellDef="let element"> {{element.tipo}} </td>
+        </ng-container>
       
         <!-- Weight Column -->
         <!-- apellido -->
@@ -44,7 +48,6 @@
         </ng-container>
   
 
-        
         <ng-container matColumnDef="wifi_mac">
           <th mat-header-cell *matHeaderCellDef> Mac Address Inalambrica </th>
           <td mat-cell *matCellDef="let element"> {{element.wifi_mac }} </td>
@@ -104,21 +107,3 @@
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
       </table>
   
-      <table class="table">
-        <thead>
-          <tr>
-            <th >#</th>
-            <th >Cedula</th>
-            <th scope="col">Usuario</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let usuario of listUsuarios">
-            <th>1</th>
-            <td>{{usuario.buy_age_equipos}}</td>
-            <td></td>
-          </tr>
-          
-         
-        </tbody>
-      </table>

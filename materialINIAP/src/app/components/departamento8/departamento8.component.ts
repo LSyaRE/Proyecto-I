@@ -17,7 +17,7 @@ export class Departamento8Component implements OnInit {
     
   ];
 
-  displayedColumns: string[] = ['nombres_personas', 'marca_equipos', 'modelo_equipos', 'num_serie_equipos', 'lan_mac', 'wifi_mac', 'lan_ip', 'wifi_ip', 'ordinal_equipos', 'buy_age_equipos','nom_estado', 'observacion_equipos', 'acciones'];
+  displayedColumns: string[] =  ['nombres_personas', 'tipo','marca_equipos', 'modelo_equipos', 'num_serie_equipos', 'lan_mac', 'wifi_mac', 'lan_ip', 'wifi_ip', 'ordinal_equipos', 'buy_age_equipos','nom_estado', 'observacion_equipos', 'acciones'];
   dataSource = new MatTableDataSource(this.listUsuarios);
   constructor() { }
 

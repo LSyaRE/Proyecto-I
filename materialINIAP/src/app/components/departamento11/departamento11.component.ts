@@ -24,9 +24,6 @@ export class Departamento11Component implements OnInit {
   ngOnInit(): void {
   }
 
-  applyFilter(event: Event) {
-    const filterValue = (event.target as HTMLInputElement).value;
-    this.dataSource.filter = filterValue.trim().toLowerCase();
-  }
+  
 
 }

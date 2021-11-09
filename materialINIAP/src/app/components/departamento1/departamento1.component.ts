@@ -14,11 +14,7 @@ import { CrudService } from 'src/app/services/crud/crud.service';
 export class Departamento1Component implements OnInit {
 
 
-  listUsuarios: Usuario[] = [
-    
-    
-    
-  ];
+  listUsuarios: Usuario[] = [];
 
   constructor(private crudService:CrudService, private router:Router) { }
 
@@ -41,10 +37,11 @@ export class Departamento1Component implements OnInit {
     );
   
   }
+  
     
   listarunEquipo()
   {
-    this.crudService.getunEquipos('0').subscribe(
+    this.crudService.getunEquipos('1').subscribe(
       res=> {
         
         console.log(res )
@@ -55,10 +52,6 @@ export class Departamento1Component implements OnInit {
       err=> console.log(err)
     );
   };
-  
-  
- 
-  
   
   
 

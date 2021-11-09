@@ -11,10 +11,9 @@ import { CrudService } from 'src/app/services/crud/crud.service';
 })
 export class AgregarComponent implements OnInit {
 
-  id:Newid [] = [];
+  idNewbie:Newid [] = [];
   
   usuario:Envio={
-    id_all:'',
     numSerie:'',
     marca:'',
     modelo:'',
@@ -33,7 +32,7 @@ export class AgregarComponent implements OnInit {
 
   ngOnInit(): void {
     this.listarNewId()
-    console.log(this.id);
+    
   }
 
   listarNewId(){
@@ -42,8 +41,8 @@ export class AgregarComponent implements OnInit {
       res=> {
         
         
-        this.id=<any>res; 
-        console.log(this.id)
+        this.idNewbie=<any>res; 
+        console.log(res)
       },
       err=> console.log(err)
     );
@@ -58,14 +57,14 @@ export class AgregarComponent implements OnInit {
   async agregarEquipo() {
 
     console.log(this.usuario)
-    //  const add = this.crudService.addEquipo(this.usuario).subscribe(
-    //    res => {
-    //      console.log(res)
+    const add = this.crudService.addEquipo(this.usuario).subscribe(
+        res => {
+          console.log(res)
 
-    //    },
-    //    err => console.log(err)
-    //  );
-    //  console.log(add)
+        },
+        err => console.log(err)
+      );
+      console.log(add)
     await this.delay(0.5)
     this.router.navigate(['/home/inicio'])
      

@@ -11,7 +11,7 @@ const router = Router();
 router.get('/', async (req, res) => {
 
     try {
-        const sql = `select MAX (id_equipos +1)idNew from equipos`;
+        const sql = `select MAX (id_equipos +1)idnew from equipos`;
         const data = await db.query(sql, (err, rows, fiedls) => {
 
             if (err) throw err;

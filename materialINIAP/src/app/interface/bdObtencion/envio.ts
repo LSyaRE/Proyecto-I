@@ -1,5 +1,4 @@
 export interface Envio {
-    id_all: string;
     numSerie:string;
     marca:string;
     modelo:string;

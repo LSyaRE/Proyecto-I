@@ -76,12 +76,12 @@ router.get('/:id', async (req, res) => {
 
             try {
                 console.log(req.body)
-                const { id_all, numSerie, marca, modelo, ordinal,buyAge, observacion, ip_wifi, ip_lan, mac_wifi, mac_lan, depart } = req.body;
-                let sql = `insert into equipos values ((${id_all}),0,0,${numSerie},'${marca}','${modelo}',${ordinal},${buyAge},'${observacion}');
-            insert into ip values(${id_all},'${ip_wifi}','${ip_lan}');
-            insert into mac values(${id_all},'${mac_wifi}','${mac_lan}');
-            insert into conexion values (${id_all},${id_all},${id_all},${id_all});
-            insert into asignacion values (${id_all},'N/A',${depart},${id_all});`;
+                const {numSerie, marca, modelo, ordinal,buyAge, observacion, ip_wifi, ip_lan, mac_wifi, mac_lan, depart } = req.body;
+                let sql = `insert into equipos values ((select MAX (id_equipos +1)idnew from equipos),0,0,${numSerie},'${marca}','${modelo}',${ordinal},${buyAge},'${observacion}');
+            insert into ip values((select MAX (id_equipos +1)idnew from equipos),'${ip_wifi}','${ip_lan}');
+            insert into mac values((select MAX (id_equipos +1)idnew from equipos),'${mac_wifi}','${mac_lan}');
+            insert into conexion values ((select MAX (id_equipos +1)idnew from equipos),(select MAX (id_equipos +1)idnew from equipos),(select MAX (id_equipos +1)idnew from equipos),(select MAX (id_equipos +1)idnew from equipos));
+            insert into asignacion values ((select MAX (id_equipos +1)idnew from equipos),'N/A',${depart},(select MAX (id_equipos +1)idnew from equipos));`;
                 const data = await db.query(sql, (err, rows, fiedls) => {
 
                     if (err) throw err;

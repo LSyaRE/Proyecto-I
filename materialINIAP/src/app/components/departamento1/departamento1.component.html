@@ -106,6 +106,7 @@
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
       </table>
    -->
+   
       <table class="table table-hover  table-dark">
         <thead>
           <tr>
@@ -126,6 +127,7 @@
         <tbody>
           <tr *ngFor="let Usuario of listUsuarios">
             <th scope="row">{{Usuario.nombres_personas}}</th>
+            <td>{{Usuario.nom_tipo}}</td>
             <td>{{Usuario.marca_equipos}}</td>
             <td>{{Usuario.modelo_equipos}}</td>
             <td>{{Usuario.num_serie_equipos}}</td>
@@ -133,11 +135,11 @@
             <td>{{Usuario.wifi_mac}}</td>
             <td>{{Usuario.lan_ip}}</td>
             <td>{{Usuario.wifi_ip}}</td>
-            <td>{{Usuario.ordinal_equipos}}</td>
+            <!-- <td>{{Usuario.ordinal_equipos}}</td> -->
             <td>{{Usuario.buy_age_equipos}}</td>
             <td>{{Usuario.nom_estado}}</td>
             <td>{{Usuario.observacion_equipos}}</td>
-            <td>{{Usuario.tipo}}</td>
+            
           </tr>
          
         </tbody>

@@ -1,3 +1,3 @@
 export interface Newid {
-    idnew: number;
+    idnew: string;
 }

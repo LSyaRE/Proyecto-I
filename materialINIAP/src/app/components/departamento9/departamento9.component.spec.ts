@@ -1,5 +1,5 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { Departamento9Component } from './departamento9.component';
 
 describe('Departamento9Component', () => {
@@ -22,4 +22,6 @@ describe('Departamento9Component', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+ 
 });

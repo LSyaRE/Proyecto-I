@@ -1,0 +1,105 @@
+<style>
+  a { color: #fff; } /* CSS link color */
+</style>
+
+<body>
+    <header class="main-header fixed">
+
+     
+
+      <a routerLink="/home" class="logo">
+
+      <span class="logo-mini">
+        <img src="assets/img/logo.png" class="img-circle" alt="User Image" width="100spx"   >
+        
+
+      </span> 
+        <span class="logo-lg">
+          <img src="assets/img/logo.png" class="img-circle" alt="User Image" width="100px" blur=(5pxs)  >
+        </span>
+      </a>
+      
+      <nav class="navbar navbar-inverse navbar-static-top">
+        <STYLE>a {text-decoration: none;} </STYLE>
+
+        <a class="sidebar-toggle" data-toggle="offcanvas" role="button">
+          <span class="sr-only"></span>
+
+        </a>
+<h1>    </h1>
+<h1>    </h1>
+<h1>    </h1>
+<h1>    </h1>
+<h1>    </h1>
+<h1>    </h1>
+      <button class="btn btn-primary" type="button" >Ingreso de Datos por Predeterminado</button>
+      <button class="btn btn-secondary" type="button" routerLink="/home/agregar_personas" >Agregar Personas</button>
+      </nav>
+      
+    </header>
+
+    
+    <aside class="main-sidebar"> 
+      
+    
+    <section class="sidebar" style="height: auto;" >
+        
+        <div class="user-panel">
+          <div class="pull-left image">
+            <img src="assets/img/icono.png" class="img-circle" alt="User Image"  width="20px">
+          </div>
+          <div class="pull-left info">
+            <i class="Username">Admin</i>
+          </div>
+        </div>
+    
+       
+        <ul class="sidebar-menu">
+             
+          <li class="treeview">
+            <a href="#">
+                <img src="assets/img/maletin.png" class="img-circle" alt="User Image" width="20px"> <span class="usernome">Departamentos</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+
+              <li><a routerLink="/home/departamento1" class="alterd"><i class="fa fa-circle-o text-aqua"></i> Auditoria Interna  </a></li>
+              <li><a routerLink="/home/departamento2"><i class="fa fa-circle-o text-aqua"></i> Administrativa Financiera</a></li>
+              <li><a routerLink="/home/departamento3"><i class="fa fa-circle-o text-aqua"></i>Direccion Ejecutiva</a></li>
+              <li><a routerLink="/home/departamento4" ><i class="fa fa-circle-o text-aqua"></i>Asesoria Juridica</a></li>
+              <li><a routerLink="/home/departamento5" ><i class="fa fa-circle-o text-aqua"></i>Poduccion y Serv.Esp. </a></li>
+              <li><a routerLink="/home/departamento6" ><i class="fa fa-circle-o text-aqua"></i>Talento Humano</a></li>
+              <li><a routerLink="/home/departamento7" ><i class="fa fa-circle-o text-aqua"></i>Transferencia de Tecn.</a></li>
+              <li><a routerLink="/home/departamento8" ><i class="fa fa-circle-o text-aqua"></i>Investigacion y Gest. del Con.</a></li>
+              <li><a routerLink="/home/departamento9" ><i class="fa fa-circle-o text-aqua"></i>Planificacion y Gestion Estrat.</a></li>
+              <li><a routerLink="/home/departamento10" ><i class="fa fa-circle-o text-aqua"></i>Comunicacion Social </a></li>
+              <li><a routerLink="/home/departamento11"><i class="fa fa-circle-o text-aqua"></i>Informacion y Comunicacion</a></li>
+             
+
+            </ul>
+          </li>
+    
+          
+          <li class="header">EQUIPOS</li>
+          <li><a routerLink="/home/malos"><i class="fa fa-circle-o text-red"></i> <span>MALOS</span></a></li>
+          <li><a routerLink="/home/regulares"><i class="fa fa-circle-o text-yellow"></i> <span>REGULARES</span></a></li>
+          <li><a routerLink="/home/buenos" ><i class="fa fa-circle-o text-aqua"></i> <span>BUENOS</span></a></li>
+        </ul>
+      </section>
+
+    </aside>
+   
+    <script src="assets/js/AdminLTE/app.min.js"></script>
+
+   
+    <section class="content-wrapper">
+      
+      <router-outlet></router-outlet>
+
+     </section>
+    
+     
+    
+   </body>

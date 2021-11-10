@@ -1,0 +1,58 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background: url(assets/img/campo.jpg) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    filter: blur();
+    
+
+}
+
+.sidebar{
+
+    backdrop-filter: 80%;
+}
+
+.user-panel{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.fa {
+    color: rgb(31, 255, 244);
+}s
+
+.user-panel{
+    fill-opacity: initials;
+}
+
+ .main-sidebar{
+     background-color: rgba(61, 65, 65, 0.267);
+    backdrop-filter: blur(6px);
+ }
+
+ .sidebar ul li{
+    color: rgba(200, 255, 145, 0.815);
+    font-weight:bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+
+.usernome{
+    color: #fff;
+    }

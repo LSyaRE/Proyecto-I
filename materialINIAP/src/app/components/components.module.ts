@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-
+import { ComponentsRoutingModule } from './components-routing.module';
 import { Departamento1Component } from './departamento1/departamento1.component';
 import { Departamento2Component } from './departamento2/departamento2.component';
 import { Departamento3Component } from './departamento3/departamento3.component';
@@ -16,11 +16,29 @@ import { Departamento11Component } from './departamento11/departamento11.compone
 import { EliminadosComponent } from './eliminados/eliminados.component';
 import { EstablesComponent } from './estables/estables.component';
 import { MantenimientoComponent } from './mantenimiento/mantenimiento.component';
+import { NavegacionComponent } from './navegacion/navegacion.component';
+import { ComponentsComponent } from './components.component';
+import {HttpClientModule }from '@angular/common/http';
+import { BienvenidaComponent } from './bienvenida/bienvenida.component';
+import { FiltroService } from '../services/Minventario/filtro/filtro.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+/*Angular material*/
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatTableModule} from '@angular/material/table';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
+import {MatIconModule } from '@angular/material/icon';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import { FormularioComponent } from './formulario/formulario.component';
+import { AgregarComponent } from './agregar/agregar.component';
 
 
 
 @NgModule({
   declarations: [
+    
     Departamento1Component,
     Departamento2Component,
     Departamento3Component,
@@ -34,12 +52,36 @@ import { MantenimientoComponent } from './mantenimiento/mantenimiento.component'
     Departamento11Component,
     EliminadosComponent,
     EstablesComponent,
-    MantenimientoComponent
-  ],
+    MantenimientoComponent,
+    NavegacionComponent,
+    ComponentsComponent,
+    BienvenidaComponent,
+    FormularioComponent,
+    AgregarComponent,
+
+    
+  ],  
+  providers: [FiltroService],
   imports: [
-    CommonModule
+    CommonModule,
+    BrowserModule,
+    ComponentsRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatTableModule,
+    BrowserAnimationsModule,
+    MatSliderModule,
+    MatIconModule,
+    MatTooltipModule
+    
+    
+    
   ],
   exports:[
+    
     Departamento1Component,
     Departamento2Component,
     Departamento3Component,
@@ -53,8 +95,15 @@ import { MantenimientoComponent } from './mantenimiento/mantenimiento.component'
     Departamento11Component,
     EliminadosComponent,
     EstablesComponent,
-    MantenimientoComponent
+    MantenimientoComponent,
+    NavegacionComponent,
+    ComponentsComponent,
+    MatTableModule,
+    MatTooltipModule
+    
 
   ]
 })
-export class ComponentsModule { }
+export class ComponentsModule {
+
+ }
